@@ -1,0 +1,12 @@
+.footerWrapper {
+    height: 120px;
+    border-top:1px solid var(--color-border-primary);
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: -4px;
+    margin-left: 12px;
+
+}
