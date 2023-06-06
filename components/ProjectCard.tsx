@@ -28,7 +28,7 @@ const ProjectCard = ({ projectName, coverImage,tags }: Props) => {
                 />
             </Link>
             </div>
-            <div className={styles.card__tags}>
+            <div className={styles.tagsWrapper}>
         {tags.map((tag) => (
           <Tag key={tag} label={tag} />
         ))}

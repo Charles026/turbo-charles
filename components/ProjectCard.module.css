@@ -13,3 +13,9 @@
     transform: translateY(-4px);
 }
 
+
+.tagsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
