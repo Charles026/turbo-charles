@@ -6,7 +6,7 @@
   left: -300px;
   top: -100px;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 49, 234, 0.30) 0%, rgba(30, 241, 255, 0.28) 100%);
+  background: linear-gradient(180deg, rgba(255, 49, 234, 0.20) 0%, rgba(30, 241, 255, 0.28) 100%);
   filter: blur(50px);
   transform: rotate(-150deg);
   z-index: -100;

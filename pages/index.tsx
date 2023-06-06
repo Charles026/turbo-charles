@@ -23,8 +23,6 @@ export default function Home() {
 
       <main className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
         
-     
-        
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0 relative'>
 
@@ -38,7 +36,7 @@ export default function Home() {
               <h1 className="text-5xl font-black ">
                 Charles
               </h1>
-              <div className='text-lg gap-2 leading-relaxed  flex flex-col mt-4 '>
+              <div className='text-lg gap-3  leading-loose  flex flex-col mt-4 '>
                 <p>
                   UI/UX Designer
                 </p>
@@ -55,7 +53,7 @@ export default function Home() {
           </div>
         </div>
        
-        <div className='mx-auto  mb-10'>
+        <div className='mx-auto  mb-40'>
           <h1 className='text-xl mb-6 text-gray-900 font-semibold  text-center xl:text-left  dark:text-gray-50'>Projects</h1>
           <ProjectCardList data={ projects}></ProjectCardList>
         </div>

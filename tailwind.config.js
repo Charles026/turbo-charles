@@ -1,18 +1,47 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+    container: {
+      center: true,
+      screens: {
+        xs: "100%",
+        sm: "100%",
+        md: "768px",
+        lg: "1200px",
+        xl: "1340px",
+        "2xl": "1280px",
       },
+    },
+    screens: {
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1240px",
+      "2xl": "1280px",
+    },
+    extend: {
+      boxShadow: {
+        lg: "0px 2px 8px -2px rgba(0, 0, 0, 0.05), 0px 16px 32px -4px rgba(0, 0, 0, 0.08)" 
+      },
+      colors: {
+        zinc: {
+          700: 'rgba(255, 255, 255, 0.1)',
+          800: 'rgba(255, 255, 255, 0.06)',
+        }
+      }
     },
   },
   plugins: [],
 }
+
+
