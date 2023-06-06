@@ -1,0 +1,9 @@
+.scrollIndicator {
+  height: 3px;
+  background-image: linear-gradient(to left, #FB3DFF 0%, #61F6FF 60%, #00aaff 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  filter: saturate(1);
+}

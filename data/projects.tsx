@@ -1,53 +1,57 @@
 import imgPlaceholder from "../images/img-placeholder.jpg";
 
 
-export const project = [
+const projects = [
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'kingsoft-office-design-system',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "wps-ai",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
-  },{
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
   {
-    project: "kingsoft-design-system",
-    projectTitle: "Kingsoft Design System",
-    description: "This is the first project",
-    image: imgPlaceholder,
+    projectName: 'wps-ai',
+    coverImage: imgPlaceholder,
+    title: 'Kingsoft Office Design System',
+    subtitle: '金山办公设计系统',
+    tags: ['Design System', 'Design Engineering'],
   },
-];
+  
+]
 
+export default projects;

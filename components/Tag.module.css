@@ -1,0 +1,10 @@
+.tagWrapper {
+display: inline-block;
+padding: 4px 12px;
+gap: 10px;
+border: 1px solid var(--color-border-normal);
+border-radius: 18px;
+font-size: 14px;
+margin-right: 12px;
+color: var(--color-gray-100);
+}

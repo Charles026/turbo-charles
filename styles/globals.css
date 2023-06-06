@@ -3,22 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --color-text-primary: var(--color-gray-900);
-  --color-text-secondary: var(--color-gray-700);
-  --color-text-tertiary: var(--color-gray-500);
-
-  --color-background-top: var(--color-white);
-  --color-background-middle: var(--color-white);
-  --color-background-base: var(--color-white);
-  --color-background-plate: var(--color-gray-50);
-
-  --color-fill-base: var(--color-white);
-  --color-fill-light: var(--color-gray-50);
-  --color-fill-regular: var(--color-gray-100);
-  --color-fill-medium: var(--color-gray-200);
-
-  --color-border-primary: var(--color-gray-200);
-  --color-border-secondary: var(--color-gray-300);
+  --color-text-primary: rgba(var(--color-gray-900),1); 
+  --color-text-secondary: rgba(var(--color-gray-700),1);
+  --color-text-tertiary: rgba(var(--color-gray-500),1);
+  --color-background-top: rgba(var(--color-white),1);
+  --color-background-middle:rgba(var(--color-white),1); 
+  --color-background-base:rgba(var(--color-white),1);
+  --color-background-plate: rgba(var(--color-gray-100),1);
+  --color-fill-base:rgba(var(--color-white),1);
+  --color-fill-light: rgba(var(--color-gray-50),1);
+  --color-fill-regular:rgba(var(--color-gray-100),1); 
+  --color-fill-medium:rgba(var(--color-gray-200),1);  
+  --color-border-light:rgba(var(--color-gray-200),1);
+  --color-border-normal:rgba(var(--color-gray-400),1); 
 
 
   --color-black: 0, 0, 0;
@@ -37,30 +34,27 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text-primary: var(--color-white);
-    --color-text-secondary: var(--color-gray-200);
-    --color-text-tertiary: var(--color-gray-400);
-
-    --color-background-top: var(--color-gray-700);
-    --color-background-middle: var(--color-gray-800);
-    --color-background-base: var(--color-gray-900);
-    --color-background-plate: var(--color-black);
-
-    --color-fill-base: var(--color-gray-900);
-    --color-fill-light: var(--color-gray-800);
-    --color-fill-regular: var(--color-gray-700);
-    --color-fill-medium: var(--color-gray-600);
-
-    --color-border-primary: var(--color-gray-600);
-    --color-border-secondary: var(--color-gray-500);
-
-
+    --color-text-primary: rgba(var(--color-white),1);
+    --color-text-secondary: rgba(var(--color-gray-200),1);
+    --color-text-tertiary: rgba(var(--color-gray-400),1);
+    --color-background-top: rgba(var(--color-gray-700),1);
+    --color-background-middle: rgba(var(--color-gray-800),1); 
+    --color-background-base:rgba(var(--color-gray-900),1);
+    --color-background-plate: rgba(var(--color-black),1); 
+    --color-fill-base:rgba(var(--color-gray-900),1);
+    --color-fill-light: rgba(var(--color-gray-800),1);
+    --color-fill-regular:rgba(var(--color-gray-700),1); 
+    --color-fill-medium:rgba(var(--color-gray-600),1);   
+    --color-border-primary:rgba(var(--color-gray-200),1);
+    --color-border-secondary:rgba(var(--color-gray-300),1);
+    --color-border-light: rgba(var(--color-gray-600),1);
+    --color-border-normal: rgba(var(--color-gray-300),1);
   }
 }
 
 html,
 body {
-  background-color: var(--color-background-base);
+  background-color: var(--color-background-plate);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -80,6 +74,6 @@ body {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 

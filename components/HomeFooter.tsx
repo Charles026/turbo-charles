@@ -1,15 +1,15 @@
 
 import Image from "next/image";
-import CatHead from '@/images/cat-head.svg';
-import styles from '@/component/Footer.module.css';
+// import CatHead from '..public/cat-head.svg';
+import styles from '@/components/HomeFooter.module.css';
 
-const Footer = () => {
+const HomeFooter = () => {
     return (
         <footer className={`${styles.footerWrapper} flex flex-row items-center justify-center`}>
 
             <div className="container flex flex-row">
 
-            <Image src={CatHead} alt="Ahdai">
+            <Image src='./cat-head.svg' width={48} height={48} alt="Ahdai">
             </Image>
 
             <div className={styles.contentWrapper}>
@@ -26,4 +26,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default HomeFooter;
