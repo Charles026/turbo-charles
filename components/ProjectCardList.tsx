@@ -5,7 +5,7 @@ interface ProjectCardList {
     data: {
         projectName: string;
         coverImage: StaticImageData;
-        title: string;
+        projectTitle: string;
         subtitle: string;
         tags: string[];
     }[];

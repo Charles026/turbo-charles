@@ -5,11 +5,11 @@
 :root {
   --color-text-primary: rgba(var(--color-gray-900),1); 
   --color-text-secondary: rgba(var(--color-gray-700),1);
-  --color-text-tertiary: rgba(var(--color-gray-500),1);
+  --color-text-tertiary: rgba(var(--color-gray-600),1);
   --color-background-top: rgba(var(--color-white),1);
   --color-background-middle:rgba(var(--color-white),1); 
   --color-background-base:rgba(var(--color-white),1);
-  --color-background-plate: rgba(var(--color-gray-100),1);
+  --color-background-plate: rgba(var(--color-gray-00),1);
   --color-fill-base:rgba(var(--color-white),1);
   --color-fill-light: rgba(var(--color-gray-50),1);
   --color-fill-regular:rgba(var(--color-gray-100),1); 
@@ -19,7 +19,7 @@
 
 
   --color-black: 0, 0, 0;
-  --color-gray-900: 0, 0, 0;
+  --color-gray-900: 10, 10, 10;
   --color-gray-800: 51, 51, 51;
   --color-gray-700: 102, 102, 102;
   --color-gray-600: 153, 153, 153;
@@ -30,6 +30,8 @@
   --color-gray-100: 245, 245, 245;
   --color-gray-50: 250, 250, 250;
   --color-white: 255, 255, 255;
+
+  --breakpoint-md: 768px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -76,5 +78,6 @@ body {
 
 p {
   font-weight: 400;
+  color: var(--color-text-primary);
 }
 

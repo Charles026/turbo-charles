@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
        
-        <div className='mx-auto  mb-40'>
+        <div className='container mx-auto mt-10 mb-40 xl:w-1/2 xl:mt-0'>
           <h1 className='text-xl mb-6 text-gray-900 font-semibold  text-center xl:text-left  dark:text-gray-50'>Projects</h1>
           <ProjectCardList data={ projects}></ProjectCardList>
         </div>

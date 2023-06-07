@@ -1,12 +1,7 @@
 .footerWrapper {
-    height: 120px;
-    border-top:1px solid var(--color-border-primary);
+    height: 80px;
+    border-top:1px solid var(--color-border-light);
+    /* color: var(--color-text-primary); */
 }
 
-.contentWrapper {
-    display: flex;
-    flex-direction: column;
-    gap: -4px;
-    margin-left: 12px;
 
-}

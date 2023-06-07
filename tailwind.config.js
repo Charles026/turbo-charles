@@ -17,17 +17,17 @@ module.exports = {
         sm: "100%",
         md: "768px",
         lg: "1200px",
-        xl: "1340px",
-        "2xl": "1280px",
+        xl: "1280px",
+        "2xl": "1340px",
       },
     },
     screens: {
       xs: "480px",
       sm: "640px",
       md: "768px",
-      lg: "1024px",
-      xl: "1240px",
-      "2xl": "1280px",
+      lg: "1200px",
+      xl: "1280px",
+      "2xl": "1340px",
     },
     extend: {
       boxShadow: {

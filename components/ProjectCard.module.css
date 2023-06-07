@@ -1,12 +1,21 @@
 .imageContainer {
     display: block;
-    width: 540px;
-    height: calc(600px * 9 / 16);
+    width: 100%;
+    height: auto;
     border-radius: 24px;
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     transition: all 0.2s ease-in-out;
 }
+
+@media screen and (max-width: var(--breakpoint-md)) {
+    .imageContainer {
+        width: 100%;
+        height: calc(width * 9 / 16);
+    }
+}
+    
+
 
 .imageContainer:hover {
     box-shadow: 0px 26px 40px -8px rgba(0, 0, 0, 0.20);
@@ -19,3 +28,18 @@
     flex-wrap: wrap;
   }
   
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color:var(--color-text-primary);
+}
+
+.subtitle {
+    margin-top: -4px;
+}
+
+.titleContainer {
+    margin-bottom: 16px;
+    padding: 0 2px;
+}
