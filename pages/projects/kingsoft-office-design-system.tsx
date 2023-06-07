@@ -1,11 +1,14 @@
+import Nav from "@/components/Nav"
+
 
 export default function Page() {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="text-4xl font-bold text-center">
+      <div >
+        <Nav />
+        <h1 className="text-4xl font-bold text-center " style={{height:"3000px"}}>
           Hello Charles
         </h1>
-      </main>
+      </div>
     )
   }
   
