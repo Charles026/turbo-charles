@@ -4,6 +4,7 @@ import CatHead from '@/public/cat-head.svg';
 import styles from '@/components/HomeFooter.module.css';
 
 const HomeFooter = () => {
+    const year = new Date().getFullYear();
     return (
 
         <footer className={`${styles.footerWrapper} flex flex-row items-center justify-center `}>
@@ -14,7 +15,8 @@ const HomeFooter = () => {
             Built with ❤️ for Ahdai
         </p>
         </div>
-        <p className={styles.copywrite}> © 2023 Charles </p>
+      
+        <p className={styles.copywrite}>{` © ${year} Charles `}</p>
         </div>
         </footer>
 
