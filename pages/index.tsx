@@ -5,7 +5,7 @@ import ScrollIndicator from '../components/ScrollIndicator';
 import styles from '../styles/Home.module.css';
 import ProjectCardList from '@/components/ProjectCardList';
 import projects from '@/data/projects';
-import HomeFooter from '@/components/HomeFooter';
+
 
 
 
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
 
     </main>
-    <HomeFooter />
+
     </div>
   )
 }

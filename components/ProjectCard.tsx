@@ -17,10 +17,10 @@ interface Props {
 const ProjectCard = ({ projectName,projectTitle,coverImage,tags,subtitle }: Props) => {
 
     return (
-        <div className='md:w-full'>
+        <div className='w-full lg:w-4/5 mx-auto xl:w-full'>
             <div className={`${styles.imageContainer}`}>
             <Link  href={`/projects/${projectName}`}>
-                <Image  className="w-full h-full object-cover"
+                <Image  className="w-full h-full object-cover "
                 src={coverImage}
                 alt={`${projectName} Cover`}
                 />

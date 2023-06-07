@@ -1,9 +1,9 @@
 
 import Image from "next/image";
 import CatHead from '@/public/cat-head.svg';
-import styles from '@/components/HomeFooter.module.css';
+import styles from '@/components/Footer.module.css';
 
-const HomeFooter = () => {
+const Footer = () => {
     const year = new Date().getFullYear();
     return (
 
@@ -23,7 +23,7 @@ const HomeFooter = () => {
     )
 }
 
-export default HomeFooter;
+export default Footer;
 
 
 // <footer className={`${styles.footerWrapper} flex flex-row items-center justify-center `}>
