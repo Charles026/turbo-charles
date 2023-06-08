@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <ScrollIndicator/>
 
-      <div className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
+      <div className='container px-5 flex flex-col  mx-auto lg:pt-16   xl:flex-row '>
         
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0 relative'>
