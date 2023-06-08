@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import styles from '@/components/Footer.module.css';
 import ColorModeSwitch from "./ColorModeSwitch";
 import CatHead from '@/components/icons/CatHead';
