@@ -1,7 +1,20 @@
-.title {
+.navContainer {
+    z-index: 1;
+}
+
+nav .title {
     font-size: 24px;
     font-weight: 600;
-    color: var(--color-text-primary);
     margin: 0;
     padding: 0;
 }
+
+@supports(mix-blend-mode: difference) {
+    .navContainer {
+        mix-blend-mode: difference;
+    }
+ nav .title {
+        color: #fff;
+    }
+}
+

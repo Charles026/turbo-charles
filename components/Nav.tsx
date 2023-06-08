@@ -12,8 +12,8 @@ const Nav = () => {
 
 
     return (
-        <nav className='w-full sticky h-16 flex justify-center items-center'>
-            <div className='container'>
+        <nav className={`${styles.navContainer} w-full  h-16 flex justify-center items-center`}>
+            <div className='container fixed'>
                 <button onClick={handleClick} className={styles.title}>Projects</button>
             </div>
         </nav>

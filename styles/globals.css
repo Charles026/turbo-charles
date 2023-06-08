@@ -9,7 +9,7 @@
   --color-background-top: rgba(var(--color-white),1);
   --color-background-middle:rgba(var(--color-white),1); 
   --color-background-base:rgba(var(--color-white),1);
-  --color-background-plate: rgba(var(--color-gray-00),1);
+  --color-background-plate: rgba(var(--color-gray-100),1);
   --color-fill-base:rgba(var(--color-white),1);
   --color-fill-light: rgba(var(--color-gray-50),1);
   --color-fill-regular:rgba(var(--color-gray-100),1); 
@@ -49,14 +49,14 @@
     --color-fill-medium:rgba(var(--color-gray-600),1);   
     --color-border-primary:rgba(var(--color-gray-200),1);
     --color-border-secondary:rgba(var(--color-gray-300),1);
-    --color-border-light: rgba(var(--color-gray-600),1);
-    --color-border-normal: rgba(var(--color-gray-300),1);
+    --color-border-light: rgba(var(--color-gray-800),1);
+    --color-border-normal: rgba(var(--color-gray-600),1);
   }
 }
 
 html,
 body {
-  background-color: var(--color-background-plate);
+  background-color: var(--color-background-base);
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
