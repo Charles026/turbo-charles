@@ -24,3 +24,12 @@
     transform: rotate(30deg);
     z-index: -100;
 }
+
+
+.iconWrapper {
+  color: var(--tc-color-text-primary);
+}
+
+.iconWrapper svg:hover {
+  opacity: 0.6;
+}

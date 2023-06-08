@@ -1,7 +1,8 @@
 
 import Image from "next/image";
-import CatHead from '@/public/cat-head.svg';
 import styles from '@/components/Footer.module.css';
+import ColorModeSwitch from "./ColorModeSwitch";
+import CatHead from '@/components/icons/CatHead';
 
 const Footer = () => {
     const year = new Date().getFullYear();
@@ -9,15 +10,19 @@ const Footer = () => {
 
         <footer className={`${styles.footerWrapper} flex flex-row items-center justify-center `}>
         <div className="flex flex-row justify-between container px-5">
-        <div className="flex flex-row gap-4 justify-center items-center ">
-        <Image className="w-8 h-auto" src={CatHead} alt="Ahdai"/>
-        <p>
+        <div className="flex flex-row gap-4 justify-center items-center">
+        <CatHead/>
+        <p className="text-sm">
             Built with ❤️ for Ahdai
         </p>
+        <p className="text-sm">{` © ${year} Charles `}</p>
         </div>
       
-        <p className={styles.copywrite}>{` © ${year} Charles `}</p>
+       <div className="m-0 p-0 hidden md:flex flex-col justify-center items-center">
+        <ColorModeSwitch/>
         </div>
+        </div>
+       
         </footer>
 
     )

@@ -1,0 +1,13 @@
+.selectContainer {
+    padding: 3px 8px;
+    background-color: var(--tc-color-fill-light);
+    appearance: none;
+    border-radius: 8px;
+    text-align: center;
+    width: fit-content;
+    font-size: 14px;
+}
+
+.selectContainer:focus {
+    outline: none;
+}

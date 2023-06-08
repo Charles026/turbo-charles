@@ -10,7 +10,8 @@ import Instagram from '@/components/icons/Instagram';
 import Github from '@/components/icons/Github';
 import Weixin from '@/components/icons/Weixin';
 
-import ColorModeSwitch from '@/components/ColorModeSwitch';
+
+
 
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <>
       <ScrollIndicator/>
-      <ColorModeSwitch/>
+
       <div className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
         
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
@@ -36,7 +37,7 @@ export default function Home() {
               <h1 className="text-5xl font-extrabold" style={{color: "var(--tc-color-text-primary)"}}>
                 Charles
               </h1>
-              <div className='text-lg gap-3  leading-loose  flex flex-col mt-4 '>
+              <div className='text-lg gap-4  leading-loose  flex flex-col mt-4 '>
                 <p>
                   UI/UX Designer
                 </p>
@@ -48,7 +49,7 @@ export default function Home() {
                   🐱 Living with 4 lovely cats.
                 </p>
               </div>
-              <div className='flex flex-row gap-4 justify-center xl:justify-start mt-4' style={{color:"var(--tc-color-text-primary)"}}>
+              <div className={`${styles.iconWrapper} flex flex-row gap-5 justify-center xl:justify-start mt-4`}>
                 <Link href="https://dribbble.com/mumumycat">
                 <Dribbble />
                 </Link>
