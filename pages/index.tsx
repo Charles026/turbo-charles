@@ -1,28 +1,30 @@
-import Image from 'next/image'
+
 import Link from 'next/link'
 import Avatar from '../components/Avatar';
 import ScrollIndicator from '../components/ScrollIndicator';
 import styles from '../styles/Home.module.css';
 import ProjectCardList from '@/components/ProjectCardList';
 import projects from '@/data/projects';
+import Dribbble from '@/components/icons/Dribbble';
+import Instagram from '@/components/icons/Instagram';
+import Github from '@/components/icons/Github';
+import Weixin from '@/components/icons/Weixin';
 
-
-
-
-
+import ColorModeButton from '@/components/colorModeButton';
 
 
 export default function Home() {
+
   
 
   return (
-    <div>
+    <>
     
       <ScrollIndicator/>
 
 
-      <main className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
-        
+      <div className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
+        <ColorModeButton/>
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0 relative'>
 
@@ -48,6 +50,20 @@ export default function Home() {
                   🐱 Living with 4 lovely cats.
                 </p>
               </div>
+              <div className='flex flex-row gap-4 justify-center xl:justify-start mt-4' style={{color:"var(--color-text-primary)"}}>
+                <Link href="https://dribbble.com/mumumycat">
+                <Dribbble />
+                </Link>
+                <Link href="https://www.instagram.com/bancs_pine">
+                <Instagram />
+                </Link>
+                <Link href="https://github.com/Charles026">
+                <Github />
+                </Link>
+                <Link href="/">
+                <Weixin />
+                </Link>
+                </div>
             </div>
           
           </div>
@@ -58,8 +74,8 @@ export default function Home() {
           <ProjectCardList data={ projects}></ProjectCardList>
         </div>
 
-    </main>
-
     </div>
+
+    </>
   )
 }
