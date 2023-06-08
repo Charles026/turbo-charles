@@ -3,60 +3,60 @@
 @tailwind utilities;
 
 :root {
-  --color-text-primary: rgba(var(--color-gray-900),1); 
-  --color-text-secondary: rgba(var(--color-gray-700),1);
-  --color-text-tertiary: rgba(var(--color-gray-600),1);
-  --color-background-top: rgba(var(--color-white),1);
-  --color-background-middle:rgba(var(--color-white),1); 
-  --color-background-base:rgba(var(--color-white),1);
-  --color-background-plate: rgba(var(--color-gray-100),1);
-  --color-fill-base:rgba(var(--color-white),1);
-  --color-fill-light: rgba(var(--color-gray-50),1);
-  --color-fill-regular:rgba(var(--color-gray-100),1); 
-  --color-fill-medium:rgba(var(--color-gray-200),1);  
-  --color-border-light:rgba(var(--color-gray-200),1);
-  --color-border-normal:rgba(var(--color-gray-400),1); 
+  --tc-color-text-primary: rgba(var(--tc-color-gray-900),1); 
+  --tc-color-text-secondary: rgba(var(--tc-color-gray-700),1);
+  --tc-color-text-tertiary: rgba(var(--tc-color-gray-600),1);
+  --tc-color-background-top: rgba(var(--tc-color-white),1);
+  --tc-color-background-middle:rgba(var(--tc-color-white),1); 
+  --tc-color-background-base:rgba(var(--tc-color-white),1);
+  --tc-color-background-plate: rgba(var(--tc-color-gray-100),1);
+  --tc-color-fill-base:rgba(var(--tc-color-white),1);
+  --tc-color-fill-light: rgba(var(--tc-color-gray-50),1);
+  --tc-color-fill-regular:rgba(var(--tc-color-gray-100),1); 
+  --tc-color-fill-medium:rgba(var(--tc-color-gray-200),1);  
+  --tc-color-border-light:rgba(var(--tc-color-gray-200),1);
+  --tc-color-border-normal:rgba(var(--tc-color-gray-400),1); 
 
 
-  --color-black: 0, 0, 0;
-  --color-gray-900: 10, 10, 10;
-  --color-gray-800: 51, 51, 51;
-  --color-gray-700: 102, 102, 102;
-  --color-gray-600: 153, 153, 153;
-  --color-gray-500: 204, 204, 204;
-  --color-gray-400: 221, 221, 221;
-  --color-gray-300: 238, 238, 238;
-  --color-gray-200: 242, 242, 242;
-  --color-gray-100: 245, 245, 245;
-  --color-gray-50: 250, 250, 250;
-  --color-white: 255, 255, 255;
+  --tc-color-black: 0, 0, 0;
+  --tc-color-gray-900: 10, 10, 10;
+  --tc-color-gray-800: 51, 51, 51;
+  --tc-color-gray-700: 102, 102, 102;
+  --tc-color-gray-600: 153, 153, 153;
+  --tc-color-gray-500: 204, 204, 204;
+  --tc-color-gray-400: 221, 221, 221;
+  --tc-color-gray-300: 238, 238, 238;
+  --tc-color-gray-200: 242, 242, 242;
+  --tc-color-gray-100: 245, 245, 245;
+  --tc-color-gray-50: 250, 250, 250;
+  --tc-color-white: 255, 255, 255;
 
   --breakpoint-md: 768px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text-primary: rgba(var(--color-white),1);
-    --color-text-secondary: rgba(var(--color-gray-200),1);
-    --color-text-tertiary: rgba(var(--color-gray-400),1);
-    --color-background-top: rgba(var(--color-gray-700),1);
-    --color-background-middle: rgba(var(--color-gray-800),1); 
-    --color-background-base:rgba(var(--color-gray-900),1);
-    --color-background-plate: rgba(var(--color-black),1); 
-    --color-fill-base:rgba(var(--color-gray-900),1);
-    --color-fill-light: rgba(var(--color-gray-800),1);
-    --color-fill-regular:rgba(var(--color-gray-700),1); 
-    --color-fill-medium:rgba(var(--color-gray-600),1);   
-    --color-border-primary:rgba(var(--color-gray-200),1);
-    --color-border-secondary:rgba(var(--color-gray-300),1);
-    --color-border-light: rgba(var(--color-gray-800),1);
-    --color-border-normal: rgba(var(--color-gray-600),1);
+    --tc-color-text-primary: rgba(var(--tc-color-white),1);
+    --tc-color-text-secondary: rgba(var(--tc-color-gray-200),1);
+    --tc-color-text-tertiary: rgba(var(--tc-color-gray-400),1);
+    --tc-color-background-top: rgba(var(--tc-color-gray-700),1);
+    --tc-color-background-middle: rgba(var(--tc-color-gray-800),1); 
+    --tc-color-background-base:rgba(var(--tc-color-gray-900),1);
+    --tc-color-background-plate: rgba(var(--tc-color-black),1); 
+    --tc-color-fill-base:rgba(var(--tc-color-gray-900),1);
+    --tc-color-fill-light: rgba(var(--tc-color-gray-800),1);
+    --tc-color-fill-regular:rgba(var(--tc-color-gray-700),1); 
+    --tc-color-fill-medium:rgba(var(--tc-color-gray-600),1);   
+    --tc-color-border-primary:rgba(var(--tc-color-gray-200),1);
+    --tc-color-border-secondary:rgba(var(--tc-color-gray-300),1);
+    --tc-color-border-light: rgba(var(--tc-color-gray-800),1);
+    --tc-color-border-normal: rgba(var(--tc-color-gray-600),1);
   }
 }
 
 html,
 body {
-  background-color: var(--color-background-base);
+  background-color: var(--tc-color-background-base) ;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -78,6 +78,6 @@ body {
 
 p {
   font-weight: 400;
-  color: var(--color-text-primary);
+  color: var(--tc-color-text-primary);
 }
 
