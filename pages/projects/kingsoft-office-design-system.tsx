@@ -5,7 +5,7 @@ import Placeholder from "@/images/img-placeholder.jpg"
 function ProjectPage() {
   return (
     <div style={{height:"3000px"}}>
-      <h1 className="text-4xl font-bold text-center " style={{color:"var(--color-text-primary)"}}>
+      <h1 className="text-4xl font-bold text-center " style={{color:"var(--tc-color-text-primary)"}}>
         Hello project
       </h1>
       <Image src={Placeholder} alt="placeholder" width={1000} />

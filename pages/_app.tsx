@@ -1,10 +1,11 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import type { ReactNode } from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
 
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
+
+import { ThemeProvider } from 'next-themes'
 
 const inter = Inter({ 
   subsets: ['latin']
@@ -27,11 +28,11 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = (Component as ComponentWithLayout).getLayout || ((page: ReactNode) => <>{page}</>);
 
   return (
-    <ChakraProvider>
+    <ThemeProvider>
     <main className={inter.className}>
       {getLayout(<Component {...pageProps} />)}
       <Footer />
     </main>
-    </ChakraProvider>
+    </ThemeProvider>
   )
 }

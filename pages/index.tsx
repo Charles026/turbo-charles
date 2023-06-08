@@ -10,7 +10,7 @@ import Instagram from '@/components/icons/Instagram';
 import Github from '@/components/icons/Github';
 import Weixin from '@/components/icons/Weixin';
 
-import ColorModeButton from '@/components/colorModeButton';
+import ColorModeSwitch from '@/components/ColorModeSwitch';
 
 
 export default function Home() {
@@ -19,12 +19,10 @@ export default function Home() {
 
   return (
     <>
-    
       <ScrollIndicator/>
-
-
+      <ColorModeSwitch/>
       <div className='container px-5 flex flex-col  mx-auto pt-16  xl:flex-row '>
-        <ColorModeButton/>
+        
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0 relative'>
 
@@ -35,7 +33,7 @@ export default function Home() {
             <Avatar src="/myphoto@2x.png" alt="User Avatar" size={140} />
             </div>
             <div className='mt-8 '>
-              <h1 className="text-5xl font-extrabold" style={{color: "var(--color-text-primary)"}}>
+              <h1 className="text-5xl font-extrabold" style={{color: "var(--tc-color-text-primary)"}}>
                 Charles
               </h1>
               <div className='text-lg gap-3  leading-loose  flex flex-col mt-4 '>
@@ -50,7 +48,7 @@ export default function Home() {
                   🐱 Living with 4 lovely cats.
                 </p>
               </div>
-              <div className='flex flex-row gap-4 justify-center xl:justify-start mt-4' style={{color:"var(--color-text-primary)"}}>
+              <div className='flex flex-row gap-4 justify-center xl:justify-start mt-4' style={{color:"var(--tc-color-text-primary)"}}>
                 <Link href="https://dribbble.com/mumumycat">
                 <Dribbble />
                 </Link>
@@ -70,7 +68,7 @@ export default function Home() {
         </div>
        
         <div className='container mx-auto mt-10 mb-40 xl:w-1/2 xl:mt-0'>
-          <h1 className='text-xl mb-6 font-semibold  text-center xl:text-left' style={{color:"var(--color-text-primary)"}}>Projects</h1>
+          <h1 className='text-xl mb-6 font-semibold  text-center xl:text-left' style={{color:"var(--tc-color-text-primary)"}}>Projects</h1>
           <ProjectCardList data={ projects}></ProjectCardList>
         </div>
 

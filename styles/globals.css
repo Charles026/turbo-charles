@@ -34,8 +34,8 @@
   --breakpoint-md: 768px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+[data-theme='dark']{
+
     --tc-color-text-primary: rgba(var(--tc-color-white),1);
     --tc-color-text-secondary: rgba(var(--tc-color-gray-200),1);
     --tc-color-text-tertiary: rgba(var(--tc-color-gray-400),1);
@@ -52,7 +52,7 @@
     --tc-color-border-light: rgba(var(--tc-color-gray-800),1);
     --tc-color-border-normal: rgba(var(--tc-color-gray-600),1);
   }
-}
+
 
 html,
 body {
@@ -67,6 +67,7 @@ body {
 
   overscroll-behavior: none;
   min-height: 100vh;
+  color: var(--tc-color-text-primary);
   
 }
 

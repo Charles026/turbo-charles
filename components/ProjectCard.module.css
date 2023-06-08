@@ -32,7 +32,7 @@
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
-    color:var(--color-text-primary);
+    color:var(--tc-color-text-primary);
 }
 
 .subtitle {
