@@ -1,6 +1,7 @@
-
+import Image from 'next/image'
 import Link from 'next/link'
 import Avatar from '../components/Avatar';
+
 import ScrollIndicator from '../components/ScrollIndicator';
 import styles from '../styles/Home.module.css';
 import ProjectCardList from '@/components/ProjectCardList';
@@ -9,8 +10,11 @@ import Dribbble from '@/components/icons/Dribbble';
 import Instagram from '@/components/icons/Instagram';
 import Github from '@/components/icons/Github';
 import Weixin from '@/components/icons/Weixin';
-
-
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover"
 
 
 
@@ -21,6 +25,7 @@ export default function Home() {
   return (
     <>
       <ScrollIndicator/>
+      
       <div className='container px-5 flex flex-col  mx-auto lg:pt-16 xl:flex-row '>
         <div className='mx-auto  w-auto mb-20 xl:w-1/2 xl:mr-8'>
           <div className='text-center top-16 xl:mr-8 xl:sticky xl:text-left xl:ml-0 relative'>
@@ -57,9 +62,14 @@ export default function Home() {
                 <Link href="https://github.com/Charles026">
                 <Github />
                 </Link>
-                <Link href="/">
-                <Weixin />
-                </Link>
+                <Popover >
+                  <PopoverTrigger> 
+                    <Weixin/>
+                  </PopoverTrigger>
+                  <PopoverContent>
+                    <Image src='/qrcode@2x.png' alt='' width={200} height={200}/>
+                  </PopoverContent>
+                </Popover>
                 </div>
             </div>
           
