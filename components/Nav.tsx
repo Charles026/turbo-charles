@@ -1,5 +1,8 @@
 import styles from './Nav.module.css'
 import { useRouter } from 'next/router'
+import ScrollIndicator from './ScrollIndicator'
+import Link from 'next/link'
+import ArrowLeft from './icons/ArrowLeft'
 
 const Nav = () => {
 
@@ -12,9 +15,17 @@ const Nav = () => {
 
 
     return (
-        <nav className={`${styles.navContainer} w-full  h-16 flex justify-center items-center`}>
-            <div className='container fixed'>
-                <button onClick={handleClick} className={styles.title}>Projects</button>
+        <nav className={` w-full  h-16 flex justify-center items-center`}>
+            <ScrollIndicator />
+            <div className={`container fixed ${styles.navContainer}` }>
+                
+                <Link href={"/"} className={styles.backButtonContainer}>
+                <div className='flex flex-row gap-3 items-center w-fit' >
+                <ArrowLeft/>
+                Projects 
+                </div>
+                </Link>
+             
             </div>
         </nav>
 

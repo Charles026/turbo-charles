@@ -1,8 +1,5 @@
 import React from 'react';
 
-interface DribbbleProps {
-    // Define any props you need here
-}
 
 const CatHead = () => {
     return (

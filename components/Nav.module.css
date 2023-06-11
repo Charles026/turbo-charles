@@ -2,8 +2,8 @@
     z-index: 1;
 }
 
-nav .title {
-    font-size: 24px;
+nav .backButtonContainer {
+    font-size: 18px;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -13,8 +13,12 @@ nav .title {
     .navContainer {
         mix-blend-mode: difference;
     }
- nav .title {
+ nav .backButtonContainer {
         color: #fff;
     }
+
+nav .backButtonContainer path {
+    stroke: #fff;
 }
 
+}

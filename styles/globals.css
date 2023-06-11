@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,html[data-theme='light'] {
   --tc-color-text-primary: rgba(var(--tc-color-gray-900),1); 
   --tc-color-text-secondary: rgba(var(--tc-color-gray-700),1);
   --tc-color-text-tertiary: rgba(var(--tc-color-gray-600),1);
@@ -16,6 +16,8 @@
   --tc-color-fill-medium:rgba(var(--tc-color-gray-200),1);  
   --tc-color-border-light:rgba(var(--tc-color-gray-200),1);
   --tc-color-border-normal:rgba(var(--tc-color-gray-400),1); 
+  --tc-color-background-selection: rgba(var(--tc-color-black),1);
+  --tc-color-text-selection: rgba(var(--tc-color-white),1);
 
 
   --tc-color-black: 0, 0, 0;
@@ -34,7 +36,7 @@
   --breakpoint-md: 768px;
 }
 
-[data-theme='dark']{
+html[data-theme='dark']{
 
     --tc-color-text-primary: rgba(var(--tc-color-white),1);
     --tc-color-text-secondary: rgba(var(--tc-color-gray-200),1);
@@ -51,7 +53,10 @@
     --tc-color-border-secondary:rgba(var(--tc-color-gray-300),1);
     --tc-color-border-light: rgba(var(--tc-color-gray-800),1);
     --tc-color-border-normal: rgba(var(--tc-color-gray-700),1);
-  }
+    --tc-color-background-selection: rgba(var(--tc-color-white),1);
+    --tc-color-text-selection: rgba(var(--tc-color-black),1);
+}
+
 
 
 html,
@@ -82,3 +87,25 @@ p {
   color: var(--tc-color-text-primary);
 }
 
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--tc-color-text-selection);
+  background: var(--tc-color-background-selection);
+}
+
+::selection {
+  color: var(--tc-color-text-selection);
+  background: var(--tc-color-background-selection);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+html {
+  scrollbar-width: none;  /* Firefox */
+}
