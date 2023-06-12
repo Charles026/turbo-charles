@@ -15,18 +15,21 @@ const Nav = () => {
 
 
     return (
-        <nav className={` w-full  h-16 flex justify-center items-center`}>
+        <nav className={` flex justify-center h-16 items-center `}>
             <ScrollIndicator />
-            <div className={`container fixed ${styles.navContainer}` }>
+            
+            <div className={`container fixed ${styles.navContainer} xs:px-4` }>
                 
-                <Link href={"/"} className={styles.backButtonContainer}>
-                <div className='flex flex-row gap-3 items-center w-fit' >
+                <div className={`${styles.backButtonContainer} `}>
+                <Link href={"/"} className='flex flex-row gap-3 items-center w-fit' >
                 <ArrowLeft/>
                 Projects 
-                </div>
                 </Link>
+                </div>
+                
              
             </div>
+
         </nav>
 
     )

@@ -1,4 +1,5 @@
 import imgPlaceholder from "../images/img-placeholder.jpg";
+import imageTest from "../images/Image.png";
 
 
 const projects = [

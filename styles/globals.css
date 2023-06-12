@@ -18,6 +18,7 @@
   --tc-color-border-normal:rgba(var(--tc-color-gray-400),1); 
   --tc-color-background-selection: rgba(var(--tc-color-black),1);
   --tc-color-text-selection: rgba(var(--tc-color-white),1);
+  --tc-color-background-revert: var(--tc-color-whtie);
 
 
   --tc-color-black: 0, 0, 0;
@@ -55,6 +56,7 @@ html[data-theme='dark']{
     --tc-color-border-normal: rgba(var(--tc-color-gray-700),1);
     --tc-color-background-selection: rgba(var(--tc-color-white),1);
     --tc-color-text-selection: rgba(var(--tc-color-black),1);
+    --tc-color-background-revert: var(--tc-color-black);
 }
 
 

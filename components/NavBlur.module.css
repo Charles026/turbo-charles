@@ -1,0 +1,11 @@
+
+.NavBlurWrapper {
+    -webkit-mask-image: linear-gradient(0deg,transparent,var(--tc-color-background-base));
+    mask-image: linear-gradient(0deg,transparent,var(--tc-color-background-base));
+    background-image: linear-gradient(0deg,transparent,rgba(var(--tc-color-background-revert),0.85)) ;
+    /* opacity: 0.85; */
+    backdrop-filter: blur(12px);
+    position: fixed;
+    z-index: 0;
+}
+

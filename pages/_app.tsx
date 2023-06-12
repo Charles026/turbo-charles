@@ -5,6 +5,8 @@ import type { ReactNode } from 'react'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/Footer'
 
+import NavBlur from '@/components/NavBlur'
+
 import { ThemeProvider } from 'next-themes'
 
 const inter = Inter({ 
@@ -30,6 +32,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   return (
     <ThemeProvider>
     <main className={inter.className}>
+      <NavBlur/>
       {getLayout(<Component {...pageProps} />)}
       <Footer />
     </main>

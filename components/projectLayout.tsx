@@ -9,7 +9,7 @@ export default function ProjectLayout({ children }: ProjectLayoutProps) {
     return (
         <div>
         <Nav />
-        <main>{children}</main>
+        <div id='project-main' >{children}</div>
         </div>
     );
     }
