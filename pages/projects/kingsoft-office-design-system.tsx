@@ -9,9 +9,10 @@ function ProjectPage() {
       <h1 className="text-4xl font-bold text-center " style={{color:"var(--tc-color-text-primary)"}}>
         Hello project
       </h1>
-      <div className="container grid grid-flow-row gap-4">
+      <Image src={ImageTest} alt="placeholder"  />
+      <div className="container grid grid-flow-row gap-4 justify-center">
       <Image src={Placeholder} alt="placeholder" width={1000} />
-      <Image src={ImageTest} alt="placeholder" width={1000} />
+      
       </div>
     </div>
   );

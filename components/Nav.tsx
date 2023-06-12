@@ -18,10 +18,10 @@ const Nav = () => {
         <nav className={` flex justify-center h-16 items-center `}>
             <ScrollIndicator />
             
-            <div className={`container fixed ${styles.navContainer} xs:px-4` }>
+            <div className={` fixed ${styles.navContainer} xs:px-4 w-full` }>
                 
                 <div className={`${styles.backButtonContainer} `}>
-                <Link href={"/"} className='flex flex-row gap-3 items-center w-fit' >
+                <Link href={"/"} className='flex flex-row gap-3 items-center w-fit xl:ml-24  xs:px-3' >
                 <ArrowLeft/>
                 Projects 
                 </Link>
