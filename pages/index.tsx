@@ -18,6 +18,7 @@ import {
 
 
 
+
 export default function Home() {
 
   
@@ -37,9 +38,7 @@ export default function Home() {
             <Avatar src="/myphoto@2x.png" alt="User Avatar" size={140} />
             </div>
             <div className='mt-8 '>
-              <h1 className="text-5xl font-extrabold" style={{color: "var(--tc-color-text-primary)"}}>
-                Charles
-              </h1>
+              <h1 className=' text-5xl font-extrabold'>Charles</h1>
               <div className='text-lg gap-4  leading-loose  flex flex-col mt-4 '>
                 <p>
                   UI/UX Designer

@@ -1,0 +1,41 @@
+.gradientText {
+    position: relative;
+    color: var(--tc-color-text-primary);
+   animation: backwards 1s ease-in-out forwards;
+  }
+  
+.gradientText:hover::before {
+content: 'Charles';
+position: absolute;
+top: 6.2åpx;
+left: 0;
+width: 100%;
+display: block;
+height: 100%;
+background: linear-gradient(89.99deg, #024ee7 0.01%, #f341ed 68.89%, #fa7407 104.02%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: 1;
+box-sizing: border-box;
+opacity: 0;
+animation: gradientText 1s ease-in-out forwards;
+}
+
+
+@keyframes gradientText {
+  to {
+    opacity: 1;
+  }
+}
+
+.gradientText:hover {
+    animation: gradientTextColor 1s ease-in-out forwards;
+}
+
+@keyframes gradientTextColor {
+    to {
+        color: var(--tc-color-background-base);
+    }
+}
+
