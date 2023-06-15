@@ -1,11 +1,18 @@
-'use client'
+import { useState, useEffect } from 'react';
 import styles from './NavBlur.module.css'
 import { useTheme } from 'next-themes'
 
 const NavBlur = () => { 
+    const [mounted, setMounted] = useState(false);
+    const { theme } = useTheme()
 
     // 当theme =light时，去除NavBlurWrapper
-    const { theme } = useTheme()
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
+
     if (theme === 'light') {
         return null
     }
