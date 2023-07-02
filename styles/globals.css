@@ -35,6 +35,7 @@
   --tc-color-white: 255, 255, 255;
 
   --breakpoint-md: 768px;
+
 }
 
 html[data-theme='dark']{
@@ -57,6 +58,7 @@ html[data-theme='dark']{
     --tc-color-background-selection: rgba(var(--tc-color-white),1);
     --tc-color-text-selection: rgba(var(--tc-color-black),1);
     --tc-color-background-revert: var(--tc-color-black);
+
 }
 
 

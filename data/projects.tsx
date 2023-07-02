@@ -6,7 +6,7 @@ const projects = [
   {
     projectName: 'kingsoft-office-design-system',
     coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
+    projectTitle: 'Designing Kingsoft Office Design Systems',
     subtitle: '金山办公设计系统',
     tags: ['Design System', 'Design Engineering'],
   },

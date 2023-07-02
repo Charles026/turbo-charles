@@ -6,12 +6,10 @@ import ImageTest from "@/images/Image.png"
 function ProjectPage() {
   return (
     <div style={{height:"3000px"}}>
-      <h1 className="text-4xl font-bold text-center " style={{color:"var(--tc-color-text-primary)"}}>
-        Hello project
-      </h1>
+
       <Image src={ImageTest} alt="placeholder"  />
       <div className="container grid grid-flow-row gap-4 justify-center">
-      <Image src={Placeholder} alt="placeholder" width={1000} />
+
       
       </div>
     </div>
