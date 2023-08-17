@@ -75,7 +75,7 @@ export default function Home() {
           </div>
         </div>
        
-        <div className='container mx-auto mt-10 mb-40 xl:w-1/2 xl:mt-0'>
+        <div className='container mx-auto px-6 mt-10 mb-40 xl:w-1/2 xl:mt-0'>
           <h1 className='text-xl mb-6 font-semibold  text-center xl:text-left' style={{color:"var(--tc-color-text-primary)"}}>Projects</h1>
           <ProjectCardList data={ projects}></ProjectCardList>
         </div>
