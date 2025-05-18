@@ -44,7 +44,10 @@ export default function Home() {
                   UI/UX Designer
                 </p>
                 <p>
-                  Currently @ Kingsoft Office MUI Team.<br/>Designing KingSoft Office Design Systems & WPS AI
+                  Currently @ Kingsoft Office KSUX Team.<br/>
+                  Designing WPS Lingxi & WPS AI Product Experiences
+                  <br/>
+                  Core Contributor of Kingsoft Office Design Systems
                 </p>
                 <p>
                   🧑🏻‍💻 I design and code.<br/>

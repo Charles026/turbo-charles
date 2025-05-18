@@ -1,57 +1,24 @@
 import imgPlaceholder from "../images/img-placeholder.jpg";
-import imageTest from "../images/Image.png";
 
 
 const projects = [
+
+  {
+    projectName: 'WPS-Lingxi',
+    coverImage: imgPlaceholder,
+    projectTitle: 'WPS Lingxi',
+    subtitle: 'WPS 灵犀主站',
+    tags: ['AI'],
+  },
+
   {
     projectName: 'kingsoft-office-design-system',
     coverImage: imgPlaceholder,
-    projectTitle: 'Designing Kingsoft Office Design Systems',
+    projectTitle: 'Kingsoft Office Design Systems',
     subtitle: '金山办公设计系统',
     tags: ['Design System', 'Design Engineering'],
   },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
-  {
-    projectName: 'wps-ai',
-    coverImage: imgPlaceholder,
-    projectTitle: 'Kingsoft Office Design System',
-    subtitle: '金山办公设计系统',
-    tags: ['Design System', 'Design Engineering'],
-  },
+
   
 ]
 
