@@ -77,7 +77,7 @@ function ProjectPage() {
 
             <div className="flex flex-col items-center gap-[28px]">
             <video  className="rounded-[48px] border border-gray-200 w-[320px] h-auto object-cover object-center mt-[16px]"
-              src="/videos/voice.mov"
+              src="/videos/voice.mp4"
               controls
               muted
               playsInline
