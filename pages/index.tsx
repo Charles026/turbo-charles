@@ -46,9 +46,9 @@ export default function Home() {
                 </p>
                 <p>
                   Currently @ Kingsoft Office KSUX Team.<br/>
-                  Designing WPS Lingxi & WPS AI product experiences
+                  Designing WPS Lingxi & WPS AI product experiences.
                   <br/>
-                  Core contributor of Kingsoft Office Design Systems
+                  Core contributor of Kingsoft Office Design Systems.
                 </p>
                 <p>
                   🧑🏻‍💻 I design and code.<br/>
