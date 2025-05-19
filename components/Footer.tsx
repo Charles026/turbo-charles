@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-row gap-4 justify-center items-center">
         <CatHead/>
         <p className="text-sm">
-            Built with ❤️ for Ahdai
+            Built with Next.js & ❤️ for Ahdai
         </p>
         <p className="text-sm">{` © ${year} Charles `}</p>
         </div>

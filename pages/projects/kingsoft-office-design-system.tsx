@@ -1,8 +1,9 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
-import Placeholder from "@/images/img-placeholder.jpg"
 import ImageTest from "@/images/kdCoverImage.png"
 import ImageEmpty from "@/images/emptyImage.png"
+import ImageWPS from "@/images/wps365.png"
+import ImagePlugin from "@/images/figmaPlugin@2x.png"
 
 function ProjectPage() {
   return (
@@ -23,7 +24,7 @@ function ProjectPage() {
           <div>Role</div>
           <div className="font-semibold">Core Contributor</div>
           <div>Core Team</div>
-          <div>
+          <div className="font-semibold">
             张友明、肖载嘉、陈传林、唐俊华、李龙浩。React 和 Vue、QT 开发以及测试同学
           </div>
         </div>
@@ -33,14 +34,14 @@ function ProjectPage() {
         {/* 项目介绍 */}
         <section className="mb-[70px]">
           <h2 className="text-2xl font-semibold mb-[28px]">项目介绍</h2>
-          <p>WPS 灵犀是金山办公推出的 AI Native 办公应用，专注帮助提升用户创作阅读等办公体验和效率。类似的竞品有如豆包、Kimi、ChatGPT…WPS 灵犀的独特优势在与融入 WPS 云文档体系，以及有着天然的文档编辑格式壁垒，与其他竞争对手形成差异化。</p>
+          <p>KDesign 金山办公设计系统主要服务于金山办公旗下办公产品的体验设计和技术实现，并为公司内部的设计、交互、产品、开发、测试等角色提供一站式解决方案，包括组件、指南和工具等，旨在实现金山办公产品体验的一致性，以提升团队协作效率。</p>
         </section>
 
         {/* 阶段/章节 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">WPS 家族感版本面临的问题</h2>
           <div className="flex flex-col gap-[28px]">
-            <h3 className="text-lg font-semibold">UI 和体验一致性</h3>
+            <h3 className="text-lg font-semibold">UI 和体验一致性问题</h3>
             <Image src={ImageEmpty} alt="UI 和体验一致性问题说明" style={{ width: '100%', height: 'auto' }} />
             <p>what <br/> why</p>
 
@@ -60,11 +61,20 @@ function ProjectPage() {
             <h3 className="text-lg font-semibold">2. 图标工程化</h3>
             <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
             <p>SVG 图标的接口设计</p>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImagePlugin} alt="" style={{ width: '100%', height: 'auto' }} />
             <p>FIgma 效率插件的开发</p>
 
             <h3 className="text-lg font-semibold">3. KDesign 文档撰写和官网开发</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <div className="flex flex-col gap-[28px]">
+            <video className="rounded-xl mt-[16px]"
+              src="/videos/kd.mp4"
+              width={1200}
+              height={400}
+              controls
+              muted
+              playsInline
+            />
+          </div>
             <p>方案选型、开发学习</p>
           </div>
         </section>
@@ -72,7 +82,7 @@ function ProjectPage() {
         {/* 项目总结 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">总结</h2>
-          <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+          <Image src={ImageWPS} alt="" style={{ width: '100%', height: 'auto' }} />
           <p>数据体现</p>
         </section>
 

@@ -1,7 +1,8 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
-import ImageCover from "@/images/lingxiCover@2x.png"
 import ImageEmpty from "@/images/emptyImage.png"
+
+
 
 function ProjectPage() {
   return (
@@ -12,7 +13,15 @@ function ProjectPage() {
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px]">
-        <Image src={ImageCover} alt="KDesign Banner" width={1200} height={400} />
+        <video 
+          src="/videos/lingxi-transition.mp4"
+          width={1200}
+          height={400}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
       </div>
 
       {/* 版心内容 */}
@@ -21,8 +30,8 @@ function ProjectPage() {
         <div className="project-info grid grid-cols-2 gap-y-6 gap-x-[20px] mb-[70px]">
           <div>Role</div>
           <div className="font-semibold">Design Lead</div>
-          <div>Core Team</div>
-          <div>
+          <div>Team</div>
+          <div className="font-semibold">
             WPS AI 设计组（6人）
           </div>
         </div>
