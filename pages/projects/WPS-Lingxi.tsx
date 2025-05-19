@@ -12,7 +12,7 @@ function ProjectPage() {
         <h1 style={{ fontSize:32 , fontWeight: 700 }}>WPS 灵犀主站</h1>
       </div>
       {/* 头图 */}
-      <div className="flex justify-center mb-[48px]">
+      <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
         <video 
           src="/videos/lingxi-transition.mp4"
           width={1200}
@@ -21,12 +21,12 @@ function ProjectPage() {
           loop
           muted
           playsInline
-          className="rounded-2xl"
+          className="rounded-2xl w-full max-w-[1200px]"
         />
       </div>
 
       {/* 版心内容 */}
-      <div className="mx-auto" style={{ maxWidth: 1000 }}>
+      <div className="mx-auto px-4 sm:px-6 md:px-8" style={{ maxWidth: 1000 }}>
         {/* 项目信息区 */}
         <div className="project-info grid grid-cols-2 gap-y-6 gap-x-[20px] mb-[70px]">
           <div>Role</div>

@@ -18,12 +18,12 @@ function ProjectPage() {
         <h1 style={{ fontSize:32 , fontWeight: 700 }}>KDesign 金山办公设计系统</h1>
       </div>
       {/* 头图 */}
-      <div className="flex justify-center mb-[48px]">
-        <Image src={ImageTest} alt="KDesign Banner" width={1200} height={400} className="rounded-2xl" />
+      <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
+        <Image src={ImageTest} alt="KDesign Banner" width={1200} height={400} className="rounded-2xl w-full max-w-[1200px]" />
       </div>
 
       {/* 版心内容 */}
-      <div className="mx-auto" style={{ maxWidth: 1000 }}>
+      <div className="mx-auto px-4 sm:px-6 md:px-8" style={{ maxWidth: 1000 }}>
         {/* 项目信息区 */}
         <div className="project-info grid grid-cols-2 gap-y-6 gap-x-[20px] mb-[70px]">
           <div>Role</div>
