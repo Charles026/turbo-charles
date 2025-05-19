@@ -21,6 +21,7 @@ function ProjectPage() {
           loop
           muted
           playsInline
+          className="rounded-2xl"
         />
       </div>
 
@@ -49,31 +50,31 @@ function ProjectPage() {
           <h2 className="text-2xl font-semibold">WPS 灵犀在快速迭代中面临的问题</h2>
           <div className="flex flex-col gap-[28px]">
             <h3 className="text-lg font-semibold">框架设计</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p>What：框架设计没有考虑到的一些点 <br/> Why：设计背景、内部项目孵化过程中，对设计的阻力</p>
 
             <h3 className="text-lg font-semibold">与 AI 对话流的一些问题</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p>讲讲一些对话流没有考虑到的细节点</p>
 
             <h2 className="text-2xl font-semibold mt-[42px]">在构建灵犀更好的产品体验过程中，我和我的 Team 做了什么设计：</h2>
             <h3 className="text-lg font-semibold">1. 框架设计的分析判断和采用</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <ul>
               <li>设计目标的变更</li>
               <li>竞品分析和设计决策</li>
             </ul>
 
             <h3 className="text-lg font-semibold">2. 图标工程化</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p>SVG 图标的接口设计</p>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p>FIgma 效率插件的开发</p>
 
             <h3 className="text-lg font-semibold">3. KDesign 文档撰写和官网开发</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p>方案选型、开发学习</p>
           </div>
         </section>
@@ -81,7 +82,7 @@ function ProjectPage() {
         {/* 项目总结 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">总结</h2>
-          <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} />
+          <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
           <p>数据体现</p>
         </section>
 
