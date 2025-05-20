@@ -6,6 +6,16 @@ const nextConfig = {
       type: 'asset/resource'
     });
     return config;
+  },
+  images: {
+    unoptimized: true,
+    domains: ['localhost'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**'
+      }
+    ]
   }
 }
 

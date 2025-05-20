@@ -1,7 +1,6 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
 import ImageTest from "@/images/kdCoverImage.png"
-import ImageEmpty from "@/images/emptyImage.png"
 import ImageWPS from "@/images/wps365.png"
 import ImagePlugin from "@/images/figmaPlugin@2x.png"
 import ImageIcon from "@/images/icon@2x.png"
