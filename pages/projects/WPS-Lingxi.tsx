@@ -5,6 +5,7 @@ import ImageAippt from "@/images/aippt.png"
 import ImageHome from "@/images/lingxihome.png"
 import ImageMarkdown from "@/images/markdown.png"
 import ImageMarkdownPage from "@/images/markdownPage.png"
+import ImageInput from "@/images/input.png"
 
 
 
@@ -64,12 +65,10 @@ function ProjectPage() {
 
             <div className="flex flex-col gap-[28px]">
             <h2 className="text-2xl font-semibold">1. 基于意图的输入框设计</h2>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+
             <p className="leading-relaxed">
-            自然语言输入主导，转向意图识别模型
-            热门任务功能前置展示
-            交互开关
+            通过系统梳理并优化输入框的交互结构，我们明确了其“自然语言输入—意图推荐—能力挂载”的核心模型。尽管组件设计并非原创，但这有助于我们设计连接用户意图与 AI 能力的关键起点。
             </p>
             </div>
 
