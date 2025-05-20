@@ -2,6 +2,9 @@ import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
 import ImageEmpty from "@/images/emptyImage.png"
 import ImageAippt from "@/images/aippt.png"
+import ImageHome from "@/images/lingxihome.png"
+import ImageMarkdown from "@/images/markdown.png"
+import ImageMarkdownPage from "@/images/markdownPage.png"
 
 
 
@@ -10,7 +13,7 @@ function ProjectPage() {
     <div>
       {/* 页面最顶大标题 */}
       <div className="w-full flex justify-center mt-[80px] mb-[70px]">
-        <h1 style={{ fontSize:32 , fontWeight: 700 }}>WPS 灵犀主站</h1>
+        <h1 style={{ fontSize:32 , fontWeight: 700 }}>WPS 灵犀主站设计升级</h1>
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
@@ -41,38 +44,78 @@ function ProjectPage() {
         <hr className="border-t border-neutral-600 opacity-40 my-0 mb-[70px]" />
 
         {/* 项目介绍 */}
-        <section className="mb-[70px]">
+        {/*<section className="mb-[70px]">
           <h2 className="text-2xl font-semibold mb-[28px]">项目介绍</h2>
           <p className="leading-relaxed">WPS 灵犀是金山办公推出的 AI Native 办公应用，专注帮助提升用户创作阅读等办公体验和效率。类似的竞品有如豆包、Kimi、ChatGPT…WPS 灵犀的独特优势在与融入 WPS 云文档体系，以及有着天然的文档编辑格式壁垒，与其他竞争对手形成差异化。</p>
-        </section>
+        </section>*/}
 
         {/* 阶段/章节 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
-          <h2 className="text-2xl font-semibold">WPS 灵犀在快速迭代中面临的问题</h2>
           <div className="flex flex-col gap-[28px]">
-            <h3 className="text-lg font-semibold">框架设计</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <p className="leading-relaxed">What：框架设计没有考虑到的一些点 <br/> Why：设计背景、内部项目孵化过程中，对设计的阻力</p>
+          <h2 className="text-2xl font-semibold">围绕 AI 办公创作效率而设计</h2>
+          
+          <div className="space-y-4 mb-[28px]">
+              <p className="leading-relaxed">在 Kimi 热度高涨时期，我们内部孵化了一款脱离 WPS AI 应用体系的 AI Agent 类产品，支持搜索 WPS 文件、总结文档、创建会议等操作。当时产品名称还没有命名为&ldquo;灵犀&rdquo;。设计团队在极短时间内根据竞品做出快速原型并上线实验版本。</p>
 
-            <h3 className="text-lg font-semibold">与 AI 对话流的一些问题</h3>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <p className="leading-relaxed">讲讲一些对话流没有考虑到的细节点</p>
+              <p className="leading-relaxed">随着时间推进至 2024 年下半年，豆包成为更受关注的竞品， <span className="font-semibold"> AI 提升创作阅读效率 </span> 的核心价值逐步明晰，产品正式定名为「WPS 灵犀」。</p>
 
-            <h2 className="text-2xl font-semibold mt-[42px]">在构建灵犀更好的产品体验过程中，我和我的 Team 做了什么设计：</h2>
-            <h3 className="text-lg font-semibold">1. 框架设计的分析判断和采用</h3>
+              <p className="leading-relaxed">我作为设计负责人，以 AI 驱动办公创作效率为中心命题，带领团队重构主站体验，以下是一些核心的设计点。</p>
+            </div>
+
+            <div className="flex flex-col gap-[28px]">
+            <h2 className="text-2xl font-semibold">1. 基于意图的输入框设计</h2>
             <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <ul>
-              <li>设计目标的变更</li>
-              <li>竞品分析和设计决策</li>
+            <p className="leading-relaxed">
+            自然语言输入主导，转向意图识别模型
+            热门任务功能前置展示
+            交互开关
+            </p>
+            </div>
+
+            <div className="flex flex-col gap-[28px]">
+            <h2 className="text-2xl font-semibold mt-[28px]">2. 为对话流优化 </h2>
+
+
+            <Image src={ImageMarkdownPage} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImageMarkdown} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <div className="space-y-4">
+              <p className="leading-relaxed">基于文字亲密性原则，我们优化了灵犀 Markdown 消息流的文本排版，提升了长文输出的可读性与信息层次感。具体设计策略包括：优化标题字号与行高、使用斐波那契节奏间距、响应式字号策略</p>
+            </div>
+
+
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <ul className="list-disc pl-4 space-y-2">
+              <li className="leading-relaxed">情感化加载动画</li>
+              
             </ul>
+            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <ul className="list-disc pl-4 space-y-2">
+             
+              <li className="leading-relaxed">在当前会话中持续创建内容（如基于搜索文档继续生成PPT）</li>
+            </ul>
+            </div>
+            <h2 className="text-2xl font-semibold mt-[28px]">3. 由创作任务驱动的灵犀首页设计</h2>
+            <div className="w-[1200px] -mx-[100px]">
+              <Image src={ImageHome} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            </div>
+            <div className="space-y-2">
+              <p className="leading-relaxed">首页设计以用户创作任务为核心，主要包含两个关键模块：</p>
+              <ul className="list-disc pl-4 space-y-2">
+                <li className="leading-relaxed"><span className="font-semibold">最近任务建议区</span>：基于用户历史行为，推荐可能需要继续的文档创作任务，帮助用户快速接续工作流</li>
+                <li className="leading-relaxed"><span className="font-semibold">创作推荐</span>：通过创作意图推荐，给用户提供引导触点</li>
+              </ul>
+            </div>
+
+            
+
+         
           </div>
         </section>
 
         {/* 项目总结 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
-          <h2 className="text-2xl font-semibold">总结</h2>
+          <h2 className="text-2xl font-semibold">一些思考</h2>
           <Image src={ImageAippt} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
           <p className="leading-relaxed">一些关于AI设计的思考和仍在继续的一些事情</p>
 

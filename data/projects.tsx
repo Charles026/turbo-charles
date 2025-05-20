@@ -9,9 +9,9 @@ const projects = [
   {
     projectName: 'WPS-Lingxi',
     coverImage: imgLingxi,
-    projectTitle: 'WPS Lingxi',
-    subtitle: 'WPS 灵犀主站',
-    tags: ['AI'],
+    projectTitle: 'WPS Lingxi Design Upgrade',
+    subtitle: 'WPS 灵犀主站设计升级',
+    tags: ['AI', 'UX Design', 'Product Design'],
   },
 
   {

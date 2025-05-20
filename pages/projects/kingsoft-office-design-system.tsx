@@ -95,7 +95,7 @@ function ProjectPage() {
           <h2 className="text-2xl font-semibold">总结</h2>
           <Image src={ImageWPS} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
           <p className="leading-relaxed">
-            构建<span className="font-bold text-purple-600">87 项标准化组件</span>和<span className="font-bold text-purple-600">图标工程化</span>（清理近3万个冗余图标），显著提升了设计和开发效率，为WPS家族产品带来统一的用户体验。围绕家族感展开全产品线视觉体验升级，通过统一的界面语言，让用户在新版本首页、新建、组件界面等关键流程中感受到一致的设计体验。以&quot;秩序&quot;为核心，建立标准化的层次规范和控件规范，为全平台产品提供统一的设计标准，确保设计语言的一致性。
+            我们通过构建 <span className="font-bold text-purple-600">87 项标准化组件</span>和<span className="font-bold text-purple-600">图标工程化项目</span>（清理近万个冗余图标），显著提升了设计和开发效率，为 WPS 家族产品带来统一的用户体验。围绕家族感展开全产品线视觉体验升级，通过统一的界面语言，让用户在新版本首页、新建、组件界面等关键流程中感受到一致的设计体验。以&quot;秩序&quot;为核心，建立标准化的层次规范和控件规范，为全平台产品提供统一的设计标准，确保设计语言的一致性。
           </p>
         </section>
 
