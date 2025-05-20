@@ -72,7 +72,7 @@ function ProjectPage() {
             <Image src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mb-[16px]" />
             <Image src={ImageInput2} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p className="leading-relaxed">
-            通过系统梳理并优化输入框的交互结构，我们明确了其“自然语言输入—意图推荐—能力挂载”的核心模型。尽管组件设计并非原创，但这有助于我们设计连接用户意图与 AI 能力的关键起点。
+            通过系统梳理并优化输入框的交互结构，我们明确了其&ldquo;自然语言输入—意图推荐—能力挂载&rdquo;的核心模型。尽管组件设计并非原创，但这有助于我们设计连接用户意图与 AI 能力的关键起点。
             </p>
             </div>
 
@@ -89,7 +89,7 @@ function ProjectPage() {
 
             <Image src={ImageLoading} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
             <ul className="list-disc pl-4 space-y-2">
-              <li className="leading-relaxed">设计情感化加载动画，通过流畅的动效反馈和进度提示，有效缓解用户等待焦虑，提升交互体验</li>
+              <li className="leading-relaxed">基于 AI 推理流程的加载特性，我们设计了具节奏感的加载动画，将&ldquo;意图识别—能力调用—内容输出&rdquo;过程可视化。</li>
               
             </ul>
             <Image src={ImageAction} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
@@ -99,7 +99,7 @@ function ProjectPage() {
             </ul>
             </div>
             <h2 className="text-2xl font-semibold mt-[28px]">3. 由创作任务驱动的灵犀首页设计</h2>
-            <div className="w-[1200px] -mx-[100px]">
+            <div className="w-full overflow-hidden">
               <Image src={ImageHome} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             </div>
             <div className="space-y-2">
