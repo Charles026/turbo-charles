@@ -86,13 +86,13 @@ function ProjectPage() {
 
             <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
             <ul className="list-disc pl-4 space-y-2">
-              <li className="leading-relaxed">情感化加载动画</li>
+              <li className="leading-relaxed">设计情感化加载动画，通过流畅的动效反馈和进度提示，有效缓解用户等待焦虑，提升交互体验</li>
               
             </ul>
             <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
             <ul className="list-disc pl-4 space-y-2">
              
-              <li className="leading-relaxed">在当前会话中持续创建内容（如基于搜索文档继续生成PPT）</li>
+              <li className="leading-relaxed">支持会话内持续创作，例如基于搜索结果继续生成 PPT，保持创作流程的连贯性</li>
             </ul>
             </div>
             <h2 className="text-2xl font-semibold mt-[28px]">3. 由创作任务驱动的灵犀首页设计</h2>
@@ -117,7 +117,7 @@ function ProjectPage() {
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">一些思考</h2>
           <Image src={ImageAippt} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-          <p className="leading-relaxed">一些关于AI设计的思考和仍在继续的一些事情</p>
+          <p className="leading-relaxed">在灵犀的设计中，我们始终关注 AI 是否真正理解用户的任务意图，而不仅是功能的堆叠。围绕 AIPPT 等关键场景，我们持续优化智能交互的协作感与可控性，让 AI 成为创作中的思考伙伴。与此同时，我们仍持续推进超过 100 项走查点，覆盖识别、生成、引导等环节…</p>
 
           <h2 className="text-2xl font-semibold">试试 WPS 灵犀 <a href="https://365.kdocs.cn/3rd/lingxi/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:opacity-80 transition-opacity">lingxi.wps.cn</a></h2>
         </section>
