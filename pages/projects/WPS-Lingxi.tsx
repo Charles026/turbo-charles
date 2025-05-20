@@ -6,6 +6,10 @@ import ImageHome from "@/images/lingxihome.png"
 import ImageMarkdown from "@/images/markdown.png"
 import ImageMarkdownPage from "@/images/markdownPage.png"
 import ImageInput from "@/images/input.png"
+import ImageInput2 from "@/images/input2.png"
+import ImageAction from "@/images/actions.png"
+import ImageLoading from "@/images/loading.png"
+
 
 
 
@@ -64,9 +68,9 @@ function ProjectPage() {
             </div>
 
             <div className="flex flex-col gap-[28px]">
-            <h2 className="text-2xl font-semibold">1. 基于意图的输入框设计</h2>
-            <Image src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-
+            <h2 className="text-2xl font-semibold">1. LUI 的起点 —— 输入框设计</h2>
+            <Image src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mb-[16px]" />
+            <Image src={ImageInput2} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <p className="leading-relaxed">
             通过系统梳理并优化输入框的交互结构，我们明确了其“自然语言输入—意图推荐—能力挂载”的核心模型。尽管组件设计并非原创，但这有助于我们设计连接用户意图与 AI 能力的关键起点。
             </p>
@@ -83,15 +87,15 @@ function ProjectPage() {
             </div>
 
 
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <Image src={ImageLoading} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
             <ul className="list-disc pl-4 space-y-2">
               <li className="leading-relaxed">设计情感化加载动画，通过流畅的动效反馈和进度提示，有效缓解用户等待焦虑，提升交互体验</li>
               
             </ul>
-            <Image src={ImageEmpty} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <Image src={ImageAction} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
             <ul className="list-disc pl-4 space-y-2">
              
-              <li className="leading-relaxed">支持会话内持续创作，例如基于搜索结果继续生成 PPT，保持创作流程的连贯性</li>
+              <li className="leading-relaxed">支持会话内持续创作，例如基于搜索结果继续生成文档，保持创作流程的连贯性</li>
             </ul>
             </div>
             <h2 className="text-2xl font-semibold mt-[28px]">3. 由创作任务驱动的灵犀首页设计</h2>
