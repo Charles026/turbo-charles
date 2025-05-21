@@ -88,6 +88,16 @@ function ProjectPage() {
 
 
             <Image src={ImageLoading} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <video 
+          src="/videos/loading.mp4"
+          width={1200}
+          height={400}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="rounded-2xl w-full max-w-[1200px]"
+        />
             <ul className="list-disc pl-4 space-y-2">
               <li className="leading-relaxed">基于 AI 推理流程的加载特性，我们设计了具节奏感的加载动画，将&ldquo;意图识别—能力调用—内容输出&rdquo;过程可视化。</li>
               
