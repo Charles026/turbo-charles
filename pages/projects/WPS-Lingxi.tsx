@@ -40,9 +40,9 @@ function ProjectPage() {
         <div className="project-info grid grid-cols-2 gap-y-6 gap-x-[20px] mb-[70px]">
           <div>Role</div>
           <div className="font-semibold">Design Lead</div>
-          <div>Team</div>
+          <div>Timeline</div>
           <div className="font-semibold">
-            WPS AI 设计组（6人）
+            2024-2025
           </div>
         </div>
 

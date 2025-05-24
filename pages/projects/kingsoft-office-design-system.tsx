@@ -27,9 +27,9 @@ function ProjectPage() {
         <div className="project-info grid grid-cols-2 gap-y-6 gap-x-[20px] mb-[70px]">
           <div>Role</div>
           <div className="font-semibold">Core Contributor</div>
-          <div>Core Team</div>
+          <div>Timeline</div>
           <div className="font-semibold">
-            张友明、肖载嘉、陈传林、唐俊华、李龙浩。React 和 Vue、QT 开发以及测试同学
+           2022-2023
           </div>
         </div>
 

@@ -1,10 +1,16 @@
-import imgPlaceholder from "../images/img-placeholder.jpg";
+import imgPlaceholder from "../images/img-placeholder.png";
 import imgPrototypes from "../images/prototypePlaceholder.png";
 import imgLingxi from "../images/lingxiPlaceholder.png";
-
-
+import imgWpsAi from "../images/WPSAICover.png";
 
 const projects = [
+  {
+    projectName: 'wps-ai',
+    coverImage: imgWpsAi,
+    projectTitle: 'WPS AI 2.0',
+    subtitle: 'WPS AI 2.0 设计范式升级',
+    tags: ['AI', 'UX Design', 'Product Design'],
+  },
 
   {
     projectName: 'WPS-Lingxi',
@@ -29,8 +35,6 @@ const projects = [
     subtitle: '一些在 WPS 的 Prototype 制作',
     tags: ['Prototyping', 'Protopie', 'p5.js'],
   },
-
-  
 ]
 
 export default projects;
