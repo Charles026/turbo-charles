@@ -16,9 +16,7 @@ const nextConfig = {
         hostname: '**'
       }
     ]
-  },
-  output: 'export',
-  trailingSlash: true
+  }
 }
 
 module.exports = nextConfig
