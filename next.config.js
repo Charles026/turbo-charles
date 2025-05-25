@@ -9,14 +9,16 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['localhost'],
+    domains: ['localhost', 'turbocharles.space'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: '**'
       }
     ]
-  }
+  },
+  output: 'export',
+  trailingSlash: true
 }
 
 module.exports = nextConfig
