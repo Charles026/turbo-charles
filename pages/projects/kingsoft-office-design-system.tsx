@@ -10,7 +10,7 @@ import ImageIconSOP from "@/images/iconSop.png"
 import ImagePluginSOP from "@/images/pluginSop.png"
 import ImagePluginUI from "@/images/pluginUI.png"
 import ImageSVG from "@/images/svgCode.png"
-import ImageKDWwebCode from "@/images/KDwebCode.png"
+import ImageKDWwebCode from "@/images/KDWebCode.png"
 
  
 function ProjectPage() {
