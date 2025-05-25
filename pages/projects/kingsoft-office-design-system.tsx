@@ -7,6 +7,11 @@ import ImageIcon from "@/images/icon@2x.png"
 import ImageComponent from "@/images/kdComponent@2x.png"
 import ImageSubComponent from "@/images/subComponent@2x.png"
 import ImageWPS365Old from "@/images/wps365Old.png"
+import ImageIconSOP from "@/images/icon-sop.png"
+import ImagePluginSOP from "@/images/plugin-sop.png"
+import ImagePluginUI from "@/images/plugin-ui.png"
+import ImageSVG from "@/images/svg-code.png"
+import ImageKDWwebCode from "@/images/KDweb-code.png"
 
  
 function ProjectPage() {
@@ -71,12 +76,20 @@ function ProjectPage() {
               <li><strong>Design Token 设计参与</strong>：参与设计变量体系的建立，实现颜色、字体、间距等设计元素的统一管理，确保跨平台设计一致性</li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-[28px]">2. 图标工程化</h3>            
-            <Image src={ImagePlugin} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <p>负责图标工程化体系建设，包括开发 SVG 图标自动化处理 API 接口，以及 Figma 图标规范化插件。通过工具链的构建，实现了图标资源的标准化管理和高效复用。</p>
+            <h3 className="text-lg font-semibold mt-[28px]">2. KD 图标构建流程 SOP：从 Figma 到多端组件的标准化交付路径</h3> 
+            <Image src={ImageIconSOP} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+
+            <Image src={ImagePluginSOP} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImagePluginUI} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <Image src={ImageSVG} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+
+            <p className="leading-relaxed">为提升图标资产在设计与开发间的交付效率与一致性，我重点参与构建了 KD 图标构建标准流程（SOP）。流程起始于设计侧，在 Figma 中维护图标组件，通过图标插件生成可导出的 SVG 资源。所有图标代码由插件统一推送至 Git 仓库（KD Icon Git），通过构建脚本转译为适配多端框架的组件形式（如 React、Vue2、Vue3、QT）。开发侧基于组件库同步更新，在业务开发中按需调用，统一接入产品体系，最终完成入库管理。
+            <br/>
+            该流程实现了图标组件的“一次设计，多端复用”，保障了资源版本统一、更新可控、调用便捷，为后续 AI 组件视觉标准建设与平台设计资产积累提供了可扩展的协作基础。</p>
 
             <h3 className="text-lg font-semibold mt-[28px]">3. KDesign 文档撰写和官网开发</h3>
             <div className="flex flex-col gap-[28px]">
+            <Image src={ImageKDWwebCode} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
             <video className="rounded-2xl mt-[16px]"
               src="/videos/kd.mp4"
               width={1200}
