@@ -10,7 +10,7 @@ import Dribbble from '@/components/icons/Dribbble';
 import Instagram from '@/components/icons/Instagram';
 import Github from '@/components/icons/Github';
 import Weixin from '@/components/icons/Weixin';
-import QRCode from 'public/qrcode@2x.png';
+// import QRCode from 'public/qrcode@2x.png';
 import {
   Popover,
   PopoverContent,
@@ -70,7 +70,7 @@ export default function Home() {
                     <Weixin/>
                   </PopoverTrigger>
                   <PopoverContent>
-                   <Image src={QRCode} alt='' width={200} height={200}/>
+                  <Image src="/qrcode@2x.png" alt='WeChat QR Code' width={200} height={200}/>
                   </PopoverContent>
                 </Popover>
                 </div>
