@@ -99,7 +99,7 @@ function ProjectPage() {
 
             <p className="leading-relaxed">为提升图标资产在设计与开发间的交付效率与一致性，我重点参与构建了 KD 图标构建标准流程（SOP）。流程起始于设计侧，在 Figma 中维护图标组件，通过图标插件生成可导出的 SVG 资源。所有图标代码由插件统一推送至 Git 仓库（KD Icon Git），通过构建脚本转译为适配多端框架的组件形式（如 React、Vue2、Vue3、QT）。开发侧基于组件库同步更新，在业务开发中按需调用，统一接入产品体系，最终完成入库管理。
             <br/>
-            该流程实现了图标的"一次设计，多端复用"，有效清理整治了近万个冗余图标资源，全面提升了图标调用的可控性与可溯源性，确保资产版本统一、更新高效。</p>
+            该流程实现了图标的&quot;一次设计，多端复用&quot;，有效清理整治了近万个冗余图标资源，全面提升了图标调用的可控性与可溯源性，确保资产版本统一、更新高效。</p>
 
             <h3 className="text-lg font-semibold mt-[28px]">3. KDesign 文档撰写和官网开发</h3>
             <div className="flex flex-col gap-[28px]">
@@ -122,7 +122,7 @@ function ProjectPage() {
           <h2 className="text-2xl font-semibold">总结</h2>
           <Image src={ImageWPS} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
           <p className="leading-relaxed">
-            我们通过构建 <span className="font-bold text-purple-600">87 项标准化组件</span>和<span className="font-bold text-purple-600">图标工程化项目</span>（清理近万个冗余图标），显著提升了设计和开发效率，为 WPS 家族产品带来统一的用户体验。围绕家族感展开全产品线视觉体验升级，通过统一的界面语言，让用户在新版本首页、新建、组件界面等关键流程中感受到一致的设计体验。以"秩序"为核心，建立标准化的层次规范和控件规范，为全平台产品提供统一的设计标准，确保设计语言的一致性。
+            我们通过构建 <span className="font-bold text-purple-600">87 项标准化组件</span>和<span className="font-bold text-purple-600">图标工程化项目</span>（清理近万个冗余图标），显著提升了设计和开发效率，为 WPS 家族产品带来统一的用户体验。围绕家族感展开全产品线视觉体验升级，通过统一的界面语言，让用户在新版本首页、新建、组件界面等关键流程中感受到一致的设计体验。以&quot;秩序&quot;为核心，建立标准化的层次规范和控件规范，为全平台产品提供统一的设计标准，确保设计语言的一致性。
           </p>
         </section>
 
