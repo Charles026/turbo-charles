@@ -2,16 +2,15 @@ import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
 import ImageTest from "@/images/kdCoverImage.png"
 import ImageWPS from "@/images/wps365.png"
-import ImagePlugin from "@/images/figmaPlugin@2x.png"
 import ImageIcon from "@/images/icon@2x.png"
 import ImageComponent from "@/images/kdComponent@2x.png"
 import ImageSubComponent from "@/images/subComponent@2x.png"
 import ImageWPS365Old from "@/images/wps365Old.png"
-import ImageIconSOP from "@/images/icon-sop.png"
-import ImagePluginSOP from "@/images/plugin-sop.png"
-import ImagePluginUI from "@/images/plugin-ui.png"
-import ImageSVG from "@/images/svg-code.png"
-import ImageKDWwebCode from "@/images/KDweb-code.png"
+import ImageIconSOP from "@/images/iconSop.png"
+import ImagePluginSOP from "@/images/pluginSop.png"
+import ImagePluginUI from "@/images/pluginUI.png"
+import ImageSVG from "@/images/svgCode.png"
+import ImageKDWwebCode from "@/images/KDwebCode.png"
 
  
 function ProjectPage() {
