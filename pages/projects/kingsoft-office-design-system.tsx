@@ -7,6 +7,7 @@ import ImageIcon from "@/images/icon@2x.png"
 // import ImageComponent from "@/images/kdComponent@2x.png"
 import ImageInputComponent from "@/images/input-component.png"
 import ImageSubComponent from "@/images/subComponent@2x.png"
+import ImageSubComponentSheet from "@/images/subcomponent-sheet.png"
 import ImageWPS365Old from "@/images/wps365Old.png"
 import ImageIconSOP from "@/images/iconSop.png"
 import ImagePluginSOP from "@/images/pluginSop.png"
@@ -16,6 +17,7 @@ import ImageKDWwebCode from "@/images/KDWebCode.png"
 import ImageDSToken from "@/images/ds-token.png"
 import ImageDSTokenNaming from "@/images/ds-token-naming.png"
 import ImageDSTokenDefine from "@/images/ds-token-define.png"
+
 
  
 function ProjectPage() {
@@ -76,7 +78,7 @@ function ProjectPage() {
             <p className="font-semibold">1.1 提出 Sub-component 的构建方式，解决组件数量过多，维护过于复杂的问题</p>
 
             <ImagePreview src={ImageInputComponent} alt="" style={{ width: '100%', height: 'auto' }} />
-
+            <ImagePreview src={ImageSubComponentSheet} alt="" style={{ width: '100%', height: 'auto' }} />
             <ImagePreview src={ImageSubComponent} alt="" style={{ width: '100%', height: 'auto' }} />
 
             <p>我作为组件框架搭建负责人，以通过引入 Sub-component 构建方式，将复杂的输入框组件拆解为可复用、可组合的模块单元，有效减少了冗余变体，提升了组件复用率与维护效率。同时，针对组件 API 结构进行优化，将原本零散的配置项进行语义归类与能力聚合，提升了交互清晰度与使用理解成本，构建出更灵活可控的组件能力体系。</p>
