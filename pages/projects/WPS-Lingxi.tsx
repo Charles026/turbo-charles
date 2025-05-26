@@ -1,5 +1,6 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
+import ImagePreview from "@/components/ImagePreview";
 import ImageEmpty from "@/images/emptyImage.png"
 import ImageAippt from "@/images/aippt.png"
 import ImageHome from "@/images/lingxihome.png"
@@ -69,8 +70,8 @@ function ProjectPage() {
 
             <div className="flex flex-col gap-[28px]">
             <h2 className="text-2xl font-semibold">1. LUI 的起点 —— 输入框设计</h2>
-            <Image src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mb-[16px]" />
-            <Image src={ImageInput2} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <ImagePreview src={ImageInput} alt="" style={{ width: '100%', height: 'auto' }} />
+            <ImagePreview src={ImageInput2} alt="" style={{ width: '100%', height: 'auto' }} />
             <p className="leading-relaxed">
             通过系统梳理并优化输入框的交互结构，我们明确了其&ldquo;自然语言输入—意图推荐—能力挂载&rdquo;的核心模型。尽管组件设计并非原创，但这有助于我们设计连接用户意图与 AI 能力的关键起点。
             </p>
@@ -80,14 +81,14 @@ function ProjectPage() {
             <h2 className="text-2xl font-semibold mt-[28px]">2. 为对话流优化 </h2>
 
 
-            <Image src={ImageMarkdownPage} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
-            <Image src={ImageMarkdown} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+            <ImagePreview src={ImageMarkdownPage} alt="" style={{ width: '100%', height: 'auto' }} />
+            <ImagePreview src={ImageMarkdown} alt="" style={{ width: '100%', height: 'auto' }} />
             <div className="space-y-4">
               <p className="leading-relaxed">基于文字亲密性原则，我们优化了灵犀 Markdown 消息流的文本排版，提升了长文输出的可读性与信息层次感。具体设计策略包括：优化标题字号与行高、使用斐波那契节奏间距、响应式字号策略</p>
             </div>
 
 
-            <Image src={ImageLoading} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <ImagePreview src={ImageLoading} alt="" style={{ width: '100%', height: 'auto' }} />
             <video 
           src="/videos/loading.mp4"
           width={1200}
@@ -102,7 +103,7 @@ function ProjectPage() {
               <li className="leading-relaxed">基于 AI 推理流程的加载特性，我们设计了具节奏感的加载动画，将&ldquo;意图识别—能力调用—内容输出&rdquo;过程可视化。</li>
               
             </ul>
-            <Image src={ImageAction} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl mt-[16px]" />
+            <ImagePreview src={ImageAction} alt="" style={{ width: '100%', height: 'auto' }} />
             <ul className="list-disc pl-4 space-y-2">
              
               <li className="leading-relaxed">支持会话内持续创作，例如基于搜索结果继续生成文档，保持创作流程的连贯性</li>
@@ -110,7 +111,7 @@ function ProjectPage() {
             </div>
             <h2 className="text-2xl font-semibold mt-[28px]">3. 由创作任务驱动的灵犀首页设计</h2>
             <div className="w-full overflow-hidden">
-              <Image src={ImageHome} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+              <ImagePreview src={ImageHome} alt="" style={{ width: '100%', height: 'auto' }} />
             </div>
             <div className="space-y-2">
               <p className="leading-relaxed">首页设计以用户创作任务为核心，主要包含两个关键模块：</p>
@@ -129,7 +130,7 @@ function ProjectPage() {
         {/* 项目总结 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">一些思考</h2>
-          <Image src={ImageAippt} alt="" style={{ width: '100%', height: 'auto' }} className="rounded-2xl" />
+          <ImagePreview src={ImageAippt} alt="" style={{ width: '100%', height: 'auto' }} />
           <p className="leading-relaxed">在灵犀的设计中，我们始终关注 AI 是否真正理解用户的任务意图，而不仅是功能的堆叠。围绕 AIPPT 等关键场景，我们持续优化智能交互的协作感与可控性，让 AI 成为创作中的思考伙伴。与此同时，我们仍持续推进超过 100 项走查点，覆盖识别、生成、引导等环节…</p>
 
           <h2 className="text-2xl font-semibold">试试 WPS 灵犀 <a href="https://365.kdocs.cn/3rd/lingxi/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:opacity-80 transition-opacity">lingxi.wps.cn</a></h2>

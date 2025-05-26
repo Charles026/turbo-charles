@@ -1,5 +1,6 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
+import ImagePreview from "@/components/ImagePreview";
 import ImageEmpty from "@/images/emptyImage.png"
 
 function ProjectPage() {
@@ -11,12 +12,11 @@ function ProjectPage() {
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
-        <Image 
+        <ImagePreview 
           src={ImageEmpty}
-          width={1200}
-          height={400}
           alt="WPS AI 2.0 Cover"
-          className="rounded-2xl w-full max-w-[1200px]"
+          style={{ width: '100%', height: 'auto' }}
+          className="w-full max-w-[1200px]"
         />
       </div>
 
