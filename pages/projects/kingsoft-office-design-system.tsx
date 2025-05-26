@@ -4,7 +4,7 @@ import ImagePreview from "@/components/ImagePreview";
 import ImageTest from "@/images/kdCoverImage.png"
 import ImageWPS from "@/images/wps365.png"
 import ImageIcon from "@/images/icon@2x.png"
-import ImageComponent from "@/images/kdComponent@2x.png"
+// import ImageComponent from "@/images/kdComponent@2x.png"
 import ImageInputComponent from "@/images/input-component.png"
 import ImageSubComponent from "@/images/subComponent@2x.png"
 import ImageWPS365Old from "@/images/wps365Old.png"
@@ -72,14 +72,14 @@ function ProjectPage() {
             </ul>
 
             <h2 className="text-2xl font-semibold mt-[42px]">我做了什么设计/开发贡献</h2>
-            <h3 className="text-lg font-semibold">1. UI组件库的搭建</h3>
-            <p className="font-semibold mt-[28px]">1.1 组件库框架搭建</p>
+            <h3 className="text-lg font-semibold">1. UI 组件库的搭建</h3>
+            <p className="font-semibold">1.1 提出 Sub-component 的构建方式，解决组件数量过多，维护过于复杂的问题</p>
 
             <ImagePreview src={ImageInputComponent} alt="" style={{ width: '100%', height: 'auto' }} />
 
             <ImagePreview src={ImageSubComponent} alt="" style={{ width: '100%', height: 'auto' }} />
 
-            <p>主导构建了统一的组件架构，基础组件库通过 Token 和样式规范驱动，支持多平台子库按需继承与定制。同时，通过子组件搭建方式优化了组件 API 结构，以文本输入框为例，精简了参数、调整语义分组，使组件更清晰易用、配置更灵活。</p>
+            <p>我作为组件框架搭建负责人，以通过引入 Sub-component 构建方式，将复杂的输入框组件拆解为可复用、可组合的模块单元，有效减少了冗余变体，提升了组件复用率与维护效率。同时，针对组件 API 结构进行优化，将原本零散的配置项进行语义归类与能力聚合，提升了交互清晰度与使用理解成本，构建出更灵活可控的组件能力体系。</p>
             
             <p className="font-semibold mt-[28px]">1.2 Design Token 构建</p>
             <ImagePreview src={ImageDSTokenDefine} alt="" style={{ width: '100%', height: 'auto' }} />
