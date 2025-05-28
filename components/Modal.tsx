@@ -54,9 +54,7 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
           </svg>
         </button>
         {title && (
-          <div className="mb-4 pt-2 pr-8"> {/* Added padding for title to not overlap with X button */} 
-            {/* <h2 className="text-xl font-semibold text-gray-900 dark:text-white">{title}</h2> */}
-            {/* <hr className="mt-2 dark:border-gray-700" /> */}
+          <div className="mb-4 pt-2 pr-8"> 
           </div>
         )}
         {children}
