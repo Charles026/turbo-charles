@@ -10,31 +10,11 @@ import ImageInput from "@/images/input.webp"
 import ImageInput2 from "@/images/input2.webp"
 import ImageAction from "@/images/actions.webp"
 import ImageLoading from "@/images/loading.webp"
-import { useState, useEffect } from "react";
-import PasswordProtection from "@/components/PasswordProtection";
-import Modal from "@/components/Modal";
-import { useRouter } from 'next/router';
+
+
+
 
 function ProjectPage() {
-  const [isVerified, setIsVerified] = useState(false);
-  const [showPasswordModal, setShowPasswordModal] = useState(true);
-  const router = useRouter();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => { setMounted(true); }, []);
-  if (!mounted) return null;
-
-  const handlePasswordSuccess = () => {
-    setIsVerified(true);
-    setShowPasswordModal(false);
-  };
-
-  const handleModalClose = () => {
-    router.push('/');
-  };
-
-  const isModalActive = showPasswordModal && !isVerified;
-
   return (
     <div>
       {/* 页面最顶大标题 */}
@@ -157,17 +137,12 @@ function ProjectPage() {
         </section>
 
       </div>
-      {/* 模态框覆盖在内容之上 */}
-      <Modal 
-        isOpen={isModalActive} 
-        onClose={handleModalClose}
-        title="访问受限"
-      >
-        <PasswordProtection onSuccess={handlePasswordSuccess} />
-      </Modal>
     </div>
   );
 }
 
+ProjectPage.getLayout = function getLayout(page: React.ReactNode) {
+  return <ProjectLayout>{page}</ProjectLayout>;
+}
 
 export default ProjectPage;
