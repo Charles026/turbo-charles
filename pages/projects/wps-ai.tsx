@@ -2,8 +2,34 @@ import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
 import ImagePreview from "@/components/ImagePreview";
 import ImageEmpty from "@/images/emptyImage.png"
+import { useEffect, useState } from "react";
+import PasswordProtection from "@/components/PasswordProtection";
 
 function ProjectPage() {
+  const [isVerified, setIsVerified] = useState(false);
+
+  useEffect(() => {
+    // 检查是否已经验证过
+    const verified = localStorage.getItem('wpsai_verified');
+    const verifiedTime = localStorage.getItem('wpsai_verified_time');
+    
+    if (verified && verifiedTime) {
+      // 检查验证是否在24小时内
+      const timeDiff = Date.now() - parseInt(verifiedTime);
+      if (timeDiff < 24 * 60 * 60 * 1000) {
+        setIsVerified(true);
+      } else {
+        // 如果超过24小时，清除验证状态
+        localStorage.removeItem('wpsai_verified');
+        localStorage.removeItem('wpsai_verified_time');
+      }
+    }
+  }, []);
+
+  if (!isVerified) {
+    return <PasswordProtection onSuccess={() => setIsVerified(true)} />;
+  }
+
   return (
     <div>
       {/* 页面最顶大标题 */}

@@ -133,7 +133,7 @@ function ProjectPage() {
           <ImagePreview src={ImageAippt} alt="" style={{ width: '100%', height: 'auto' }} />
           <p className="leading-relaxed">在灵犀的设计中，我们始终关注 AI 是否真正理解用户的任务意图，而不仅是功能的堆叠。围绕 AIPPT 等关键场景，我们持续优化智能交互的协作感与可控性，让 AI 成为创作中的思考伙伴。与此同时，我们仍持续推进超过 100 项走查点，覆盖识别、生成、引导等环节…</p>
 
-          <h2 className="text-2xl font-semibold">试试 WPS 灵犀 <a href="https://365.kdocs.cn/3rd/lingxi/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:opacity-80 transition-opacity">lingxi.wps.cn</a></h2>
+          <h2 className="text-2xl font-semibold">试试 WPS 灵犀 <a href="https://lingxi.wps.cn/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:opacity-80 transition-opacity">lingxi.wps.cn</a></h2>
         </section>
 
       </div>
