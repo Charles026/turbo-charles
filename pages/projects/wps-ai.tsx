@@ -1,7 +1,6 @@
 import ProjectLayout from "@/components/projectLayout"
-import Image from "next/image";
 import ImagePreview from "@/components/ImagePreview";
-import ImageEmpty from "@/images/emptyImage.png"
+import ImageEmpty from "@/images/emptyImage.webp"
 import { useState } from "react";
 import PasswordProtection from "@/components/PasswordProtection";
 import Modal from "@/components/Modal";

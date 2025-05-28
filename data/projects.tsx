@@ -1,7 +1,7 @@
-import imgPlaceholder from "../images/img-placeholder.png";
-import imgPrototypes from "../images/prototypePlaceholder.png";
-import imgLingxi from "../images/lingxiPlaceholder.png";
-import imgWpsAi from "../images/WPSAICover.png";
+import imgPlaceholder from "../images/img-placeholder.webp";
+import imgPrototypes from "../images/prototypePlaceholder.webp";
+import imgLingxi from "../images/lingxiPlaceholder.webp";
+import imgWpsAi from "../images/WPSAICover.webp";
 
 const projects = [
   {

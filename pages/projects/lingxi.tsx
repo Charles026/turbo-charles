@@ -1,15 +1,15 @@
 import ProjectLayout from "@/components/projectLayout"
 import Image from "next/image";
 import ImagePreview from "@/components/ImagePreview";
-import ImageEmpty from "@/images/emptyImage.png"
-import ImageAippt from "@/images/aippt.png"
-import ImageHome from "@/images/lingxihome.png"
-import ImageMarkdown from "@/images/markdown.png"
-import ImageMarkdownPage from "@/images/markdownPage.png"
-import ImageInput from "@/images/input.png"
-import ImageInput2 from "@/images/input2.png"
-import ImageAction from "@/images/actions.png"
-import ImageLoading from "@/images/loading.png"
+import ImageEmpty from "@/images/emptyImage.webp"
+import ImageAippt from "@/images/aippt.webp"
+import ImageHome from "@/images/lingxihome.webp"
+import ImageMarkdown from "@/images/markdown.webp"
+import ImageMarkdownPage from "@/images/markdownPage.webp"
+import ImageInput from "@/images/input.webp"
+import ImageInput2 from "@/images/input2.webp"
+import ImageAction from "@/images/actions.webp"
+import ImageLoading from "@/images/loading.webp"
 
 
 

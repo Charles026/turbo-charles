@@ -36,7 +36,7 @@ export default function Home() {
           <div className={styles.blurCircleBlue}></div>
 
             <div className='flex flex-row justify-center xl:justify-start'>
-            <Avatar src="/myphoto@2x.png" alt="User Avatar" size={140} />
+            <Avatar src="/myphoto@2x.webp" alt="User Avatar" size={140} />
             </div>
             <div className='mt-8 '>
               <h1 className=' text-5xl font-extrabold'>Charles</h1>
@@ -70,7 +70,7 @@ export default function Home() {
                     <Weixin/>
                   </PopoverTrigger>
                   <PopoverContent>
-                  <Image src="/qrcode@2x.png" alt='WeChat QR Code' width={200} height={200} loading="lazy"/>
+                  <Image src="/qrcode@2x.webp" alt='WeChat QR Code' width={200} height={200} loading="lazy"/>
                   </PopoverContent>
                 </Popover>
                 </div>
