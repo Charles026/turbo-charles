@@ -13,7 +13,7 @@ const projects = [
   },
 
   {
-    projectName: 'WPS-Lingxi',
+    projectName: 'lingxi',
     coverImage: imgLingxi,
     projectTitle: 'WPS Lingxi Design Upgrade',
     subtitle: 'WPS 灵犀主站设计升级',
@@ -29,7 +29,7 @@ const projects = [
   },
 
   {
-    projectName: 'Prototyping-WPS',
+    projectName: 'prototypingWps',
     coverImage: imgPrototypes,
     projectTitle: 'Prototyping in WPS',
     subtitle: '一些在 WPS 的 Prototype 制作',
