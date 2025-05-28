@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface PasswordProtectionProps {
   onSuccess: () => void;
@@ -8,9 +8,32 @@ export default function PasswordProtection({ onSuccess }: PasswordProtectionProp
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
 
+  useEffect(() => {
+    // 检查是否已经验证过，且验证时间在24小时内
+    const verified = localStorage.getItem('wpsai_verified');
+    const verifiedTime = localStorage.getItem('wpsai_verified_time');
+    
+    if (verified && verifiedTime) {
+      const now = new Date().getTime();
+      const verifiedTimeNum = parseInt(verifiedTime);
+      const oneDay = 24 * 60 * 60 * 1000; // 24小时的毫秒数
+      
+      if (now - verifiedTimeNum < oneDay) {
+        onSuccess();
+      } else {
+        // 如果超过24小时，清除验证状态
+        localStorage.removeItem('wpsai_verified');
+        localStorage.removeItem('wpsai_verified_time');
+      }
+    }
+  }, [onSuccess]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === 'wpsai2025') {
+      // 存储验证状态和时间戳
+      localStorage.setItem('wpsai_verified', 'true');
+      localStorage.setItem('wpsai_verified_time', new Date().getTime().toString());
       onSuccess();
     } else {
       setError(true);
