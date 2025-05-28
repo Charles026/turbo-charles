@@ -18,21 +18,15 @@ export default function PasswordProtection({ onSuccess }: PasswordProtectionProp
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100">
-      <div className="max-w-md w-full space-y-8 p-12 bg-white rounded-2xl shadow-xl">
+    <div className="min-h-screen flex items-center justify-center bg-black">
+      <div className="max-w-md w-full space-y-8 p-12 bg-black rounded-2xl border border-gray-800">
         <div>
-          <h2 className="text-center text-4xl font-bold text-gray-900 mb-2">
-            WPS AI 2.0
-          </h2>
-          <p className="text-center text-lg text-gray-600">
-            项目预览
-          </p>
-          <div className="mt-4 text-center text-sm text-gray-500">
+          <div className="mt-4 text-center text-sm text-gray-400">
             请输入密码以访问此页面
           </div>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
-          <div className="rounded-lg shadow-sm">
+          <div className="rounded-lg">
             <div>
               <label htmlFor="password" className="sr-only">
                 密码
@@ -42,7 +36,7 @@ export default function PasswordProtection({ onSuccess }: PasswordProtectionProp
                 name="password"
                 type="password"
                 required
-                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 focus:z-10 text-base"
+                className="appearance-none rounded-lg relative block w-full px-4 py-3 border border-gray-800 bg-black text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 focus:z-10 text-base"
                 placeholder="请输入密码"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -59,7 +53,7 @@ export default function PasswordProtection({ onSuccess }: PasswordProtectionProp
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-base font-medium rounded-lg text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-colors duration-200"
+              className="group relative w-full flex justify-center py-3 px-4 border border-gray-800 text-base font-medium rounded-lg text-white bg-black hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 transition-colors duration-200"
             >
               验证
             </button>
