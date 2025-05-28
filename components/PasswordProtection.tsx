@@ -10,12 +10,8 @@ export default function PasswordProtection({ onSuccess }: PasswordProtectionProp
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // 这里使用一个简单的密码，实际应用中应该使用更安全的方式
     if (password === 'wpsai2025') {
       onSuccess();
-      // 将验证状态存储在 localStorage 中，24小时内有效
-      localStorage.setItem('wpsai_verified', 'true');
-      localStorage.setItem('wpsai_verified_time', Date.now().toString());
     } else {
       setError(true);
     }
