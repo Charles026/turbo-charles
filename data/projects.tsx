@@ -29,7 +29,7 @@ const projects = [
   },
 
   {
-    projectName: 'prototypingWps',
+    projectName: 'prototyping',
     coverImage: imgPrototypes,
     projectTitle: 'Prototyping in WPS',
     subtitle: '一些在 WPS 的 Prototype 制作',
