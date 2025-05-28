@@ -22,6 +22,7 @@ export default function ImagePreview({ src, alt, className, style }: ImagePrevie
           alt={alt} 
           style={style} 
           className="rounded-2xl"
+          loading="lazy"
         />
       </div>
 
@@ -35,6 +36,7 @@ export default function ImagePreview({ src, alt, className, style }: ImagePrevie
               src={src}
               alt={alt}
               className="rounded-lg"
+              loading="lazy"
               style={{ 
                 maxWidth: '100%',
                 maxHeight: '90vh',
