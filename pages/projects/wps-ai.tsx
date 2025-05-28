@@ -38,6 +38,8 @@ function ProjectPage() {
             alt="WPS AI 2.0 Cover"
             style={{ width: '100%', height: 'auto' }}
             className="w-full max-w-[1200px]"
+            priority
+            loading="eager"
           />
         </div>
 

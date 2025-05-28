@@ -6,9 +6,11 @@ interface ImagePreviewProps {
   alt: string;
   className?: string;
   style?: React.CSSProperties;
+  priority?: boolean;
+  loading?: 'eager' | 'lazy';
 }
 
-export default function ImagePreview({ src, alt, className, style }: ImagePreviewProps) {
+export default function ImagePreview({ src, alt, className, style, priority = false, loading = 'lazy' }: ImagePreviewProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -22,7 +24,8 @@ export default function ImagePreview({ src, alt, className, style }: ImagePrevie
           alt={alt} 
           style={style} 
           className="rounded-2xl"
-          loading="lazy"
+          loading={loading}
+          priority={priority}
         />
       </div>
 

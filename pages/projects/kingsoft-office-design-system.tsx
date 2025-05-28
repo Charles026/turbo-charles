@@ -29,7 +29,7 @@ function ProjectPage() {
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
-        <ImagePreview src={ImageTest} alt="KDesign Banner" style={{ width: '100%', height: 'auto' }} className="w-full max-w-[1200px]" />
+        <ImagePreview src={ImageTest} alt="KDesign Banner" style={{ width: '100%', height: 'auto' }} className="w-full max-w-[1200px]" priority loading="eager" />
       </div>
 
       {/* 版心内容 */}
