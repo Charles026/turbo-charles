@@ -23,16 +23,20 @@ function ProjectPage() {
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
-        <video 
-          src="/videos/lingxi-transition.mp4"
-          width={1200}
-          height={400}
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="rounded-2xl w-full max-w-[1200px]"
-        />
+        <div className="relative w-full max-w-[1200px]">
+          <div className="skeleton rounded-2xl w-full h-[400px]"></div>
+          <video 
+            src="/videos/lingxi-transition.mp4"
+            width={1200}
+            height={400}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="rounded-2xl w-full max-w-[1200px] absolute top-0 left-0"
+            onLoadedData={() => document.querySelector('.skeleton')?.classList.add('hidden')}
+          />
+        </div>
       </div>
 
       {/* 版心内容 */}
