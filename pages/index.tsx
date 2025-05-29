@@ -70,7 +70,7 @@ export default function Home() {
                     <Weixin/>
                   </PopoverTrigger>
                   <PopoverContent>
-                  <Image src="/qrcode@2x.webp" alt='WeChat QR Code' width={200} height={200} loading="lazy"/>
+                  <Image src="/qrcode@2x.webp" alt='WeChat QR Code' width={200} height={200} loading="eager"/>
                   </PopoverContent>
                 </Popover>
                 </div>
