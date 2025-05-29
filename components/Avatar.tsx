@@ -1,21 +1,26 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from './Avatar.module.css';
 
-type AvatarProps = {
+interface AvatarProps {
   src: string;
   alt: string;
   size: number;
-};
+}
 
-const Avatar = ({ src, alt, size }: AvatarProps) => {
-  const height = size;
-  const width = size;
+export default function Avatar({ src, alt, size }: AvatarProps) {
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className={styles.avatar} style={{ width, height }}>
-      <Image src={src} alt={alt} width={width} height={height} />
+    <div className={styles.avatar} style={{ width: size, height: size }}>
+      {isLoading && <div className={styles.skeleton} style={{ width: size, height: size }} />}
+      <Image
+        src={src}
+        alt={alt}
+        width={size}
+        height={size}
+        onLoad={() => setIsLoading(false)}
+      />
     </div>
   );
-};
-
-export default Avatar;
+}
