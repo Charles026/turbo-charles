@@ -10,11 +10,14 @@ import ImageInput from "@/images/input.webp"
 import ImageInput2 from "@/images/input2.webp"
 import ImageAction from "@/images/actions.webp"
 import ImageLoading from "@/images/loading.webp"
+import { useState } from "react";
 
 
 
 
 function ProjectPage() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <div>
       {/* 页面最顶大标题 */}
@@ -23,8 +26,10 @@ function ProjectPage() {
       </div>
       {/* 头图 */}
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
-        <div className="relative w-full max-w-[1200px]">
-          <div className="skeleton rounded-2xl w-full h-[400px]"></div>
+        <div className="relative w-full max-w-[1200px] rounded-2xl overflow-hidden">
+          {!videoLoaded && (
+            <div className="skeleton w-full  absolute top-0 left-0"></div>
+          )}
           <video 
             src="/videos/lingxi-transition.mp4"
             width={1200}
@@ -33,8 +38,8 @@ function ProjectPage() {
             loop
             muted
             playsInline
-            className="rounded-2xl w-full max-w-[1200px] absolute top-0 left-0"
-            onLoadedData={() => document.querySelector('.skeleton')?.classList.add('hidden')}
+            className="w-full "
+            onLoadedData={() => setVideoLoaded(true)}
           />
         </div>
       </div>
