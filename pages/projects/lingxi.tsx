@@ -28,7 +28,7 @@ function ProjectPage() {
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
         <div className="relative w-full max-w-[1200px] rounded-2xl overflow-hidden">
           {!videoLoaded && (
-            <div className="skeleton w-full  absolute top-0 left-0"></div>
+            <div className="skeleton w-full h-[800px] absolute top-0 left-0 rounded-2xl"></div>
           )}
           <video 
             src="/videos/lingxi-transition.mp4"
@@ -38,7 +38,7 @@ function ProjectPage() {
             loop
             muted
             playsInline
-            className="w-full "
+            className="w-full"
             onLoadedData={() => setVideoLoaded(true)}
           />
         </div>
