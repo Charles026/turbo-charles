@@ -28,7 +28,7 @@ function ProjectPage() {
       <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
         <div className="relative w-full max-w-[1200px] rounded-2xl overflow-hidden">
           {!videoLoaded && (
-            <div className="skeleton w-full h-[800px] absolute top-0 left-0 rounded-2xl"></div>
+            <div className="skeleton w-full h-[600px] absolute top-0 left-0 rounded-2xl"></div>
           )}
           <video 
             src="/videos/lingxi-transition.mp4"
@@ -40,6 +40,10 @@ function ProjectPage() {
             playsInline
             className="w-full"
             onLoadedData={() => setVideoLoaded(true)}
+            onError={() => { 
+              setVideoLoaded(true); 
+              console.error('视频加载失败，请检查路径和文件！');
+            }}
           />
         </div>
       </div>
@@ -58,13 +62,6 @@ function ProjectPage() {
 
         <hr className="border-t border-neutral-600 opacity-40 my-0 mb-[70px]" />
 
-        {/* 项目介绍 */}
-        {/*<section className="mb-[70px]">
-          <h2 className="text-2xl font-semibold mb-[28px]">项目介绍</h2>
-          <p className="leading-relaxed">WPS 灵犀是金山办公推出的 AI Native 办公应用，专注帮助提升用户创作阅读等办公体验和效率。类似的竞品有如豆包、Kimi、ChatGPT…WPS 灵犀的独特优势在与融入 WPS 云文档体系，以及有着天然的文档编辑格式壁垒，与其他竞争对手形成差异化。</p>
-        </section>*/}
-
-        {/* 阶段/章节 */}
         <section className="mb-[70px] flex flex-col gap-[28px]">
           <div className="flex flex-col gap-[28px]">
           <h2 className="text-2xl font-semibold">围绕 AI 办公创作效率而设计</h2>
