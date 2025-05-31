@@ -7,8 +7,8 @@ const projects = [
   {
     projectName: 'wps-ai',
     coverImage: imgWpsAi,
-    projectTitle: 'WPS AI 2.0',
-    subtitle: 'WPS AI 2.0 设计范式升级',
+    projectTitle: 'WPS Copilot',
+    subtitle: 'WPS Copilot 产品设计',
     tags: ['AI', 'UX Design', 'Product Design','2023-2025'],
   },
 
