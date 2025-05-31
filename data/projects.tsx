@@ -5,10 +5,10 @@ import imgWpsAi from "../images/WPSAICover.webp";
 
 const projects = [
   {
-    projectName: 'wps-ai',
+    projectName: 'copilot',
     coverImage: imgWpsAi,
     projectTitle: 'WPS Copilot',
-    subtitle: 'WPS Copilot 产品设计',
+    subtitle: '为下一代 WPS 设计 LUI + Canvas 交互范式',
     tags: ['AI', 'UX Design', 'Product Design','2023-2025'],
   },
 

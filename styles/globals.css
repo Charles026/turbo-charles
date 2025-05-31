@@ -89,6 +89,7 @@ body {
 p {
   font-weight: 400;
   color: var(--tc-color-text-primary);
+  font-size: 15px;
 }
 
 
