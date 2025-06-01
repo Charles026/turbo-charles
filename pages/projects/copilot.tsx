@@ -8,8 +8,9 @@ import { useRouter } from 'next/router';
 
 import ImageChatGPTCanvas from "@/images/chatgpt_canvas.webp"
 import ImageUXAIDiagram from "@/images/ux_ai_diagram.webp"
+import ImageChatComponent from "@/images/chat-component.webp"
 
-
+ 
 
 function ProjectPage() {
   const [isVerified, setIsVerified] = useState(false);
@@ -126,11 +127,15 @@ function ProjectPage() {
           
 
 
-            <p className="mb-6 mt-12 font-bold"> 3. 定义控场系统的设计策略：<span className="font-normal text-base">构建结构化输出、语义延展设计与控场机制 </span></p>
+            <p className="mb-6 mt-12 font-bold"> 3. 定义控场系统的设计策略：<span className="font-normal text-base">将模糊任务拆解为可感知的协作节奏</span></p>
 
 
 
-            
+            <ImagePreview loading="lazy" src={ImageChatComponent} alt="" style={{ width: '100%', height: 'auto' }}  className="mb-6"/>
+
+            <p className="mb-6">以「起草报告」为例，我们将复杂任务分解为四段式协作结构 —— 意图识别、思路生成、正文输出、结构反馈。<br/>
+            每一步都设计明确的节奏点与可见状态，确保用户在 AI 协作中保持掌控，不再“被动等待”或“中途迷失”。</p>
+
             </div>
 
           </section>
