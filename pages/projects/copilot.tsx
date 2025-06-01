@@ -9,7 +9,9 @@ import { useRouter } from 'next/router';
 import ImageChatGPTCanvas from "@/images/chatgpt_canvas.webp"
 import ImageUXAIDiagram from "@/images/ux_ai_diagram.webp"
 import ImageChatComponent from "@/images/chat-component.webp"
-
+import ImageTheProduct from "@/images/the-product.webp"
+import ImageThePPT from "@/images/the-ppt.webp"
+import ImageCopilotCover from "@/images/copilot-cover.webp"
  
 
 function ProjectPage() {
@@ -39,7 +41,7 @@ function ProjectPage() {
         {/* 头图 */}
         <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
           <ImagePreview 
-            src={ImageEmpty}
+            src={ImageCopilotCover}
             alt="WPS Copilot Cover"
             style={{ width: '100%', height: 'auto' }}
             className="w-full max-w-[1200px]"
@@ -139,6 +141,14 @@ function ProjectPage() {
             </div>
 
           </section>
+
+          <section className="mb-[70px]">
+            <h2 className="text-3xl font-extrabold mb-[28px]">Final Design</h2>
+            <ImagePreview loading="lazy" src={ImageTheProduct} alt="" style={{ width: '100%', height: 'auto' }}  className="mb-6"/>
+            <ImagePreview loading="lazy" src={ImageThePPT} alt="" style={{ width: '100%', height: 'auto' }}  className="mb-6"/>
+          </section>
+
+          
 
         </div>
       </div>
