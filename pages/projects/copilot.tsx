@@ -36,7 +36,7 @@ function ProjectPage() {
       <div>
         {/* 页面最顶大标题 */}
         <div className="w-full flex justify-center mt-[80px] mb-[70px]">
-          <h1 style={{ fontSize:32 , fontWeight: 700 }}>WPS Copilot：基于 LUI + Canvas 的下一代 AI 协作体验</h1>
+          <h1 style={{ fontSize:32 , fontWeight: 700 }}>WPS Copilot</h1>
         </div>
         {/* 头图 */}
         <div className="flex justify-center mb-[48px] px-4 sm:px-6 md:px-8">
@@ -143,7 +143,7 @@ function ProjectPage() {
           </section>
 
           <section className="mb-[70px]">
-            <h2 className="text-3xl font-extrabold mb-[28px]">Final Design</h2>
+            <h2 className="text-3xl font-extrabold mb-[28px]">The Visiual</h2>
             <ImagePreview loading="lazy" src={ImageTheProduct} alt="" style={{ width: '100%', height: 'auto' }}  className="mb-6"/>
             <ImagePreview loading="lazy" src={ImageThePPT} alt="" style={{ width: '100%', height: 'auto' }}  className="mb-6"/>
           </section>
